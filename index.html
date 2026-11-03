@@ -3,184 +3,132 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>استراتژی بازاریابی ۳۶۰ تلویزیون اسنوا و دوو | عارضه‌یابی تا اجرا</title>
+<title>استراتژی بازاریابی ۳۶۰ تلویزیون اسنوا و دوو | ارائه به هیئت‌مدیره</title>
 <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
-<link href="https://cdn.jsdelivr.net/gh/rastikerdar/vazirmatn@v33.003/Vazirmatn-font-face.css" rel="stylesheet" type="text/css">
+<link href="https://cdn.jsdelivr.net/gh/rastikerdar/vazirmatn@v33.003/Vazirmatn-font-face.css" rel="stylesheet">
 <style>
-:root {
-  --primary: #102b49;
-  --secondary: #c49a62;
-  --bg: #f4f6f8;
-  --ink: #17283b;
-  --muted: #65758a;
-  --line: #dce3ea;
-  --surface: #ffffff;
-  --teal: #137f83;
-  --red: #b6534d;
-  --green: #277c5c;
-  --snowa: #1e8c83;
-  --daewoo: #375b88;
+:root{
+  --primary:#0f2a47;
+  --secondary:#c49a62;
+  --bg:#f3f5f8;
+  --ink:#15243a;
+  --muted:#5e6f84;
+  --line:#d8e0e9;
+  --surface:#ffffff;
+  --teal:#0e8583;
+  --red:#b44b45;
+  --green:#2a7a5c;
+  --snowa:#1a7d76;
+  --daewoo:#2f527d;
 }
-* { box-sizing: border-box; margin: 0; padding: 0; }
-html { scroll-behavior: smooth; }
-body {
-  font-family: "Vazirmatn", Tahoma, Arial, sans-serif;
-  background: var(--bg);
-  color: var(--ink);
-  line-height: 1.8;
-  -webkit-font-smoothing: antialiased;
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:"Vazirmatn",Tahoma,Arial,sans-serif;background:var(--bg);color:var(--ink);line-height:1.85;-webkit-font-smoothing:antialiased}
+.wrap{max-width:1180px;margin:0 auto;padding:0 24px}
+.topbar{position:sticky;top:0;z-index:60;background:rgba(12,32,54,.97);backdrop-filter:blur(18px);color:#fff;border-bottom:1px solid #3a4f68}
+.nav{display:flex;align-items:center;justify-content:space-between;min-height:68px;gap:16px}
+.brandmark{font-weight:800;font-size:15px;letter-spacing:-.4px}
+.brandmark span{color:#e5bd86;font-size:11px;margin-right:6px}
+.navlinks{display:flex;gap:3px;overflow-x:auto;white-space:nowrap}
+.navlinks a{color:#d4deea;text-decoration:none;font-size:12px;padding:8px 11px;border-radius:8px;transition:.2s}
+.navlinks a:hover{background:#ffffff1a;color:#f0c990}
+.hero{background:radial-gradient(circle at 82% 18%,#1f6b72 0,transparent 32%),linear-gradient(118deg,#0a1e35 0%,#143a5c 58%,#1a555c 100%);color:#fff;padding:78px 0 64px;position:relative;overflow:hidden}
+.hero:after{content:"";position:absolute;inset:auto -90px -180px auto;width:480px;height:480px;border:1px solid rgba(255,255,255,.1);border-radius:50%;box-shadow:0 0 0 50px rgba(255,255,255,.02);pointer-events:none}
+.eyebrow{font-size:12px;letter-spacing:1.3px;color:#e9c99f;font-weight:700}
+.hero h1{font-size:clamp(28px,4.1vw,48px);font-weight:850;line-height:1.42;margin:14px 0 18px;max-width:820px;letter-spacing:-.8px}
+.hero p{color:#d5e0ec;font-size:16px;max-width:680px;line-height:2.05}
+.hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:30px}
+.btn{border:0;border-radius:11px;padding:13px 20px;font:inherit;font-size:13.5px;font-weight:700;cursor:pointer;text-decoration:none;display:inline-block;transition:.2s}
+.btn.gold{background:#e1b77e;color:#13253c}
+.btn.ghost{border:1px solid #9db3c7;color:#fff;background:transparent}
+.btn:hover{transform:translateY(-2px);box-shadow:0 10px 24px #06152650}
+.kpis{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:-30px;position:relative;z-index:5}
+.kpi{background:var(--surface);border:1px solid var(--line);border-radius:15px;padding:20px;box-shadow:0 12px 30px #12284010}
+.kpi b{font-size:26px;color:var(--primary);display:block;line-height:1.15;letter-spacing:-.5px}
+.kpi span{font-size:12.5px;color:var(--muted);margin-top:4px;display:block}
+.section{padding:76px 0;scroll-margin-top:84px}
+.section.alt{background:linear-gradient(180deg,#eef2f6,#e8eef3)}
+.section-head{margin-bottom:34px}
+.section-head h2{font-size:29px;font-weight:850;letter-spacing:-.7px;margin-bottom:10px}
+.section-head p{color:var(--muted);font-size:14.5px;max-width:680px;line-height:2}
+.tag{display:inline-block;background:#e6edf3;color:#2a4a66;border-radius:30px;padding:5px 13px;font-size:11px;font-weight:700;margin-bottom:12px;border:1px solid #d7e1ea}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.grid4{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:22px 24px;box-shadow:0 7px 22px #142a4509;transition:.22s}
+.card:hover{transform:translateY(-3px);box-shadow:0 14px 32px #12284014}
+.card h3{font-size:16.5px;color:var(--primary);margin-bottom:10px;line-height:1.55}
+.card p,.card li{font-size:13.5px;color:var(--muted);line-height:1.95}
+.card ul{padding-right:18px;margin-top:8px}
+.callout,.warning,.good,.info{border-radius:12px;padding:17px 20px;font-size:13.5px;line-height:1.95;margin:18px 0}
+.callout{border-right:4px solid var(--secondary);background:#fff8ed;color:#5a4933}
+.warning{border-right:4px solid var(--red);background:#fff1ef;color:#6a3c38}
+.good{border-right:4px solid var(--green);background:#eef8f2;color:#2f5a45}
+.info{border-right:4px solid var(--teal);background:#eef7f7;color:#1e4f50}
+.brand-panels{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.brand-panel{border-radius:17px;overflow:hidden;border:1px solid var(--line);background:#fff;box-shadow:0 8px 24px #142a4508}
+.paneltop{padding:24px 26px;color:#fff}
+.paneltop.snow{background:linear-gradient(115deg,#145a62,#1a8a82)}
+.paneltop.dew{background:linear-gradient(115deg,#142c4a,#355a86)}
+.paneltop h3{font-size:25px;margin-bottom:4px}
+.paneltop p{font-size:13px;opacity:.92}
+.panelbody{padding:24px}
+.pill{display:inline-block;background:#edf2f6;color:#2f4a64;border-radius:6px;padding:5px 11px;font-size:12px;margin:4px 0 0 6px}
+.table-wrap{overflow-x:auto;border-radius:14px;border:1px solid var(--line);box-shadow:0 6px 20px #142a4508}
+table{width:100%;border-collapse:collapse;font-size:13px;background:#fff}
+th,td{padding:13px 15px;text-align:right;border-bottom:1px solid #e4eaf1}
+th{background:var(--primary);color:#fff;font-weight:600}
+td:first-child{font-weight:700;color:#173552}
+.bar-row{display:grid;grid-template-columns:110px 1fr 70px;gap:12px;align-items:center;margin:10px 0;font-size:13px}
+.track{height:14px;background:#e7edf3;border-radius:20px;overflow:hidden}
+.fill{height:100%;border-radius:20px;background:linear-gradient(90deg,#1a8990,#16365d)}
+.fill.gold{background:linear-gradient(90deg,#d3a46b,#8d6038)}
+.fill.red{background:linear-gradient(90deg,#d47a6c,#a84c46)}
+.num{font-weight:700;font-variant-numeric:tabular-nums;text-align:left}
+.matrix{display:grid;grid-template-columns:200px 1fr 1fr;border:1px solid var(--line);border-radius:14px;overflow:hidden;font-size:13.5px}
+.matrix>div{padding:13px 16px;border-bottom:1px solid var(--line)}
+.matrix .h{background:var(--primary);color:#fff;font-weight:700}
+.dot{display:inline-block;width:11px;height:11px;border-radius:50%;margin-left:7px;vertical-align:middle}
+.dot.high{background:#b44b45}
+.dot.mid{background:#c49a62}
+.dot.low{background:#2a7a5c}
+.bench{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.benchcard{background:#fff;border:1px solid var(--line);border-radius:15px;padding:20px;display:flex;flex-direction:column;gap:10px}
+.benchlogo{font-size:20px;font-weight:900;color:#1a3858;letter-spacing:-.8px}
+.lesson{background:#f3f6f9;padding:11px;border-radius:9px;border-right:3px solid var(--secondary);font-size:13px;color:#36506a;line-height:1.85}
+.footer{background:#0c1c2e;color:#cfd9e6;padding:48px 0;font-size:13px}
+.footer a{color:#9ecfdb}
+.note{font-size:12px;color:#6a788c;margin-top:8px}
+@media(max-width:900px){
+  .kpis,.grid2,.grid3,.grid4,.brand-panels,.bench{grid-template-columns:1fr 1fr}
+  .matrix{grid-template-columns:150px 1fr 1fr}
 }
-.wrap { max-width: 1200px; margin: 0 auto; padding: 0 24px; }
-
-/* Topbar */
-.topbar {
-  position: sticky; top: 0; z-index: 50;
-  background: rgba(13,34,57,.96);
-  backdrop-filter: blur(16px);
-  color: #fff;
-  border-bottom: 1px solid #3c506a;
-}
-.nav {
-  display: flex; align-items: center; justify-content: space-between;
-  min-height: 64px; gap: 16px;
-}
-.brandmark { font-weight: 800; font-size: 15px; letter-spacing: -.5px; }
-.brandmark span { color: #e5bd86; font-size: 11px; }
-.navlinks { display: flex; gap: 4px; overflow-x: auto; white-space: nowrap; }
-.navlinks a {
-  color: #dbe5f0; text-decoration: none; font-size: 12px;
-  padding: 8px 12px; border-radius: 8px; transition: .2s;
-}
-.navlinks a:hover { background: #ffffff18; color: #f0c990; }
-
-/* Hero */
-.hero {
-  background: radial-gradient(circle at 80% 20%, #276b74 0, transparent 30%),
-              linear-gradient(120deg, #0b2038 0%, #153b5f 55%, #1d5960 100%);
-  color: #fff; padding: 72px 0 60px; position: relative; overflow: hidden;
-}
-.hero h1 { font-size: clamp(28px, 4vw, 46px); font-weight: 850; line-height: 1.4; margin: 12px 0 16px; max-width: 780px; }
-.hero p { color: #d9e4ef; font-size: 16px; max-width: 640px; line-height: 2; }
-.eyebrow { font-size: 12px; letter-spacing: 1.2px; color: #e9c99f; font-weight: 700; }
-.hero-actions { display: flex; gap: 12px; flex-wrap: wrap; margin-top: 28px; }
-.btn {
-  border: 0; border-radius: 11px; padding: 12px 20px; font: inherit; font-size: 13.5px; font-weight: 700;
-  cursor: pointer; text-decoration: none; display: inline-block; transition: .2s;
-}
-.btn.gold { background: #e1b77e; color: #14263d; }
-.btn.ghost { border: 1px solid #a8bdcf; color: #fff; background: transparent; }
-.btn:hover { transform: translateY(-2px); box-shadow: 0 8px 22px #07172b40; }
-
-/* KPI strip */
-.kpis {
-  display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px;
-  margin-top: -28px; position: relative; z-index: 5;
-}
-.kpi {
-  background: var(--surface); border: 1px solid var(--line); border-radius: 14px;
-  padding: 18px 20px; box-shadow: 0 10px 28px #132b450c;
-}
-.kpi b { font-size: 24px; color: var(--primary); display: block; line-height: 1.2; }
-.kpi span { font-size: 12px; color: var(--muted); }
-
-/* Sections */
-.section { padding: 72px 0; scroll-margin-top: 80px; }
-.section.alt { background: linear-gradient(180deg, #eef2f6, #e9eff4); }
-.section-head { margin-bottom: 32px; }
-.section-head h2 { font-size: 28px; font-weight: 850; letter-spacing: -.6px; margin-bottom: 8px; }
-.section-head p { color: var(--muted); font-size: 14px; max-width: 640px; line-height: 1.9; }
-.tag {
-  display: inline-block; background: #e7edf2; color: #2c4b67; border-radius: 30px;
-  padding: 4px 12px; font-size: 11px; font-weight: 700; margin-bottom: 10px;
-}
-
-/* Cards & grids */
-.grid2 { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; }
-.grid3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
-.grid4 { display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px; }
-.card {
-  background: var(--surface); border: 1px solid var(--line); border-radius: 16px;
-  padding: 22px; box-shadow: 0 6px 20px #142a4508; transition: .2s;
-}
-.card:hover { transform: translateY(-3px); box-shadow: 0 12px 28px #132b4514; }
-.card h3 { font-size: 16px; color: var(--primary); margin-bottom: 8px; }
-.card p, .card li { font-size: 13.5px; color: var(--muted); line-height: 1.9; }
-.card ul { padding-right: 18px; margin-top: 8px; }
-
-/* Callouts */
-.callout, .warning, .good {
-  border-radius: 12px; padding: 16px 18px; font-size: 13.5px; line-height: 1.9; margin: 16px 0;
-}
-.callout { border-right: 4px solid var(--secondary); background: #fff8ed; color: #5b4a34; }
-.warning { border-right: 4px solid var(--red); background: #fff1ef; color: #693d39; }
-.good { border-right: 4px solid var(--green); background: #eef8f2; color: #315b46; }
-
-/* Brand panels */
-.brand-panels { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; }
-.brand-panel { border-radius: 16px; overflow: hidden; border: 1px solid var(--line); background: #fff; }
-.paneltop { padding: 22px 24px; color: #fff; }
-.paneltop.snow { background: linear-gradient(110deg, #155b68, #1e8c83); }
-.paneltop.dew { background: linear-gradient(110deg, #152c4b, #375b88); }
-.paneltop h3 { font-size: 24px; margin-bottom: 4px; }
-.paneltop p { font-size: 13px; opacity: .9; }
-.panelbody { padding: 22px; }
-.pill { display: inline-block; background: #edf2f6; color: #304a64; border-radius: 6px; padding: 4px 10px; font-size: 12px; margin: 3px 0 0 6px; }
-
-/* Tables */
-.table-wrap { overflow-x: auto; border-radius: 14px; border: 1px solid var(--line); }
-table { width: 100%; border-collapse: collapse; font-size: 13px; background: #fff; }
-th, td { padding: 12px 14px; text-align: right; border-bottom: 1px solid #e5eaf0; }
-th { background: var(--primary); color: #fff; font-weight: 600; }
-td:first-child { font-weight: 700; color: #183958; }
-
-/* Perspective matrix */
-.matrix { display: grid; grid-template-columns: 180px 1fr 1fr; gap: 0; border: 1px solid var(--line); border-radius: 14px; overflow: hidden; }
-.matrix-head, .matrix-row { display: contents; }
-.matrix div { padding: 12px 14px; border-bottom: 1px solid var(--line); font-size: 13px; }
-.matrix .h { background: var(--primary); color: #fff; font-weight: 700; }
-.dot { display: inline-block; width: 10px; height: 10px; border-radius: 50%; margin-left: 6px; }
-.dot.high { background: #b6534d; }
-.dot.mid { background: #c49a62; }
-.dot.low { background: #277c5c; }
-
-/* Project cards */
-.project { border-right: 4px solid var(--secondary); }
-.project code { font-size: 12px; background: #f0f4f8; padding: 2px 7px; border-radius: 4px; color: var(--primary); }
-
-/* Footer */
-.footer { background: #0e1d30; color: #d4deea; padding: 40px 0; font-size: 13px; }
-.footer a { color: #a9d4df; }
-
-/* Responsive */
-@media (max-width: 900px) {
-  .kpis, .grid2, .grid3, .grid4, .brand-panels { grid-template-columns: 1fr 1fr; }
-  .matrix { grid-template-columns: 140px 1fr 1fr; }
-}
-@media (max-width: 600px) {
-  .kpis, .grid2, .grid3, .grid4, .brand-panels { grid-template-columns: 1fr; }
-  .nav { flex-direction: column; align-items: flex-start; padding: 12px 0; }
-  .navlinks { width: 100%; }
-  .hero h1 { font-size: 26px; }
-  .section { padding: 48px 0; }
+@media(max-width:600px){
+  .kpis,.grid2,.grid3,.grid4,.brand-panels,.bench{grid-template-columns:1fr}
+  .nav{flex-direction:column;align-items:flex-start;padding:12px 0;gap:8px}
+  .navlinks{width:100%}
+  .hero h1{font-size:26px}
+  .section{padding:48px 0}
 }
 </style>
 </head>
 <body>
 
-<!-- TOPBAR -->
 <header class="topbar">
   <div class="wrap nav">
-    <div class="brandmark">TV 360 <span>/ SNOWA × DAEWOO</span></div>
+    <div class="brandmark">TV 360 <span>/ ارائه به هیئت‌مدیره</span></div>
     <nav class="navlinks">
       <a href="#judgment">حکم مرکزی</a>
       <a href="#perspectives">۸ منظر</a>
       <a href="#evidence">۹ شاهد</a>
       <a href="#brand">معماری برند</a>
       <a href="#advantage">مزیت رقابتی</a>
+      <a href="#dan">الزامات دان</a>
       <a href="#cross">کمک به گروه</a>
       <a href="#retail">فروشگاه تخصصی</a>
+      <a href="#benchmark">بنچمارک</a>
       <a href="#projects">۱۲ پروژه</a>
-      <a href="#gates">اجرا و تصمیم</a>
+      <a href="#gates">تصمیمات</a>
     </nav>
   </div>
 </header>
@@ -188,183 +136,157 @@ td:first-child { font-weight: 700; color: #183958; }
 <!-- HERO -->
 <section class="hero" id="judgment">
   <div class="wrap">
-    <div class="eyebrow">عارضه‌یابی ۳۶۰ + برنامه اجرایی ۱۲ماهه · ۱۴۰۵–۱۴۰۶</div>
+    <div class="eyebrow">عارضه‌یابی ۳۶۰ درجه + برنامه اجرایی ۱۲ماهه · آذر ۱۴۰۵ تا آبان ۱۴۰۶</div>
     <h1>فروش تلویزیون هم‌زمان پشت سه قفل است:<br>عرضه · اعتماد · ارزش معامله</h1>
     <p>
-      اسنوا با بحران پذیرش و اعتماد روبه‌روست (انتخاب اول ۸٫۷٪). 
+      اسنوا با شکاف پذیرش و اعتماد روبه‌روست (آگاهی ۴۶٫۴٪، انتخاب اول ۸٫۷٪). 
       دوو پذیرش بهتری دارد اما ارزش خرید در برابر قیمت مانعش شده (۴۷٫۴٪). 
-      رشد پایدار فقط با هم‌زمانی محصول دیده‌شدنی، عرضه پایدار و معامله اقتصادی ممکن است.
+      رشد پایدار و سودآور فقط با هم‌زمانی محصول دیده‌شدنی، عرضه پایدار در کانال هدف و معامله اقتصادی برای مشتری و کانال ممکن است.
     </p>
     <div class="hero-actions">
-      <a class="btn gold" href="#perspectives">۸ منظر عارضه‌یابی</a>
-      <a class="btn ghost" href="#brand">معماری برند و فیچر</a>
+      <a class="btn gold" href="#gates">تصمیمات پیشنهادی هیئت‌مدیره</a>
+      <a class="btn ghost" href="#perspectives">۸ منظر عارضه‌یابی</a>
     </div>
   </div>
 </section>
 
-<!-- KPI STRIP -->
 <div class="wrap">
   <div class="kpis">
     <div class="kpi"><b>۸٫۷٪</b><span>انتخاب اول اسنوا (S1)</span></div>
-    <div class="kpi"><b>۴۷٫۴٪</b><span>مانع قیمت دوو (S1)</span></div>
+    <div class="kpi"><b>۱۷٫۹٪</b><span>انتخاب اول دوو (S1)</span></div>
     <div class="kpi"><b>۱۲٫۲ روز</b><span>پوشش موجودی فعلی</span></div>
-    <div class="kpi"><b>۲۵–۳۰٪</b><span>هدف مشروط سهم بازار</span></div>
+    <div class="kpi"><b>۲۵–۳۰٪</b><span>هدف مشروط سهم بازار سال اول</span></div>
   </div>
 </div>
 
-<!-- ۱. هشت منظر عارضه‌یابی -->
+<!-- ۸ منظر -->
 <section class="section" id="perspectives">
   <div class="wrap">
     <div class="section-head">
       <span class="tag">چارچوب تشخیص</span>
       <h2>۸ منظر عارضه‌یابی</h2>
-      <p>شدت عارضه در دو برند یکسان نیست. چهار منظر اول از داخل محصول تا اقتصاد معامله امتداد دارد؛ چهار منظر دوم مسیر تبدیل به فروش و تجربه مالکیت را نشان می‌دهد.</p>
+      <p>شدت عارضه در دو برند یکسان نیست. چهار منظر اول از داخل محصول تا اقتصاد معامله امتداد دارد. چهار منظر دوم مسیر تبدیل محصول به فروش و تجربه مالکیت را نشان می‌دهد.</p>
     </div>
-
     <div class="matrix">
-      <div class="h">منظر</div>
-      <div class="h">اسنوا</div>
-      <div class="h">دوو</div>
-
-      <div>۱. تأمین و سورسینگ</div>
-      <div><span class="dot high"></span> شدید</div>
-      <div><span class="dot high"></span> شدید</div>
-
-      <div>۲. تولید و کیفیت</div>
-      <div><span class="dot mid"></span> متوسط</div>
-      <div><span class="dot mid"></span> متوسط</div>
-
-      <div>۳. محصول و فناوری</div>
-      <div><span class="dot high"></span> شدید</div>
-      <div><span class="dot mid"></span> متوسط</div>
-
-      <div>۴. قیمت و اقتصاد محصول</div>
-      <div><span class="dot mid"></span> متوسط</div>
-      <div><span class="dot high"></span> شدید</div>
-
-      <div>۵. فروش و توزیع</div>
-      <div><span class="dot high"></span> شدید</div>
-      <div><span class="dot high"></span> شدید</div>
-
-      <div>۶. بازار و مصرف‌کننده</div>
-      <div><span class="dot high"></span> شدید</div>
-      <div><span class="dot mid"></span> متوسط</div>
-
-      <div>۷. مارکتینگ و نقطه فروش</div>
-      <div><span class="dot high"></span> شدید</div>
-      <div><span class="dot mid"></span> متوسط</div>
-
-      <div>۸. خدمات و تجربه</div>
-      <div><span class="dot mid"></span> متوسط</div>
-      <div><span class="dot low"></span> نسبتاً مثبت</div>
+      <div class="h">منظر</div><div class="h">اسنوا</div><div class="h">دوو</div>
+      <div>۱. تأمین و سورسینگ</div><div><span class="dot high"></span> شدید</div><div><span class="dot high"></span> شدید</div>
+      <div>۲. تولید و کیفیت</div><div><span class="dot mid"></span> متوسط</div><div><span class="dot mid"></span> متوسط</div>
+      <div>۳. محصول و فناوری</div><div><span class="dot high"></span> شدید</div><div><span class="dot mid"></span> متوسط</div>
+      <div>۴. قیمت و اقتصاد محصول</div><div><span class="dot mid"></span> متوسط</div><div><span class="dot high"></span> شدید</div>
+      <div>۵. فروش و توزیع</div><div><span class="dot high"></span> شدید</div><div><span class="dot high"></span> شدید</div>
+      <div>۶. بازار و مصرف‌کننده</div><div><span class="dot high"></span> شدید</div><div><span class="dot mid"></span> متوسط</div>
+      <div>۷. مارکتینگ و نقطه فروش</div><div><span class="dot high"></span> شدید</div><div><span class="dot mid"></span> متوسط</div>
+      <div>۸. خدمات و تجربه</div><div><span class="dot mid"></span> متوسط</div><div><span class="dot low"></span> نسبتاً مثبت</div>
+    </div>
+    <div class="info" style="margin-top:22px">
+      <strong>پیام اصلی:</strong> گلوگاه در هم‌پوشانی حلقه‌هاست، نه در یک واحد سازمانی. عملکرد باید با سه شاخص هم‌زمان سنجیده شود: انتخاب اول در کانال هدف، موجود بودن مدل‌های کلیدی، و سود خالص معامله.
     </div>
   </div>
 </section>
 
-<!-- ۲. نه شاهد کلیدی -->
+<!-- ۹ شاهد -->
 <section class="section alt" id="evidence">
   <div class="wrap">
     <div class="section-head">
       <span class="tag">شواهد میدانی</span>
       <h2>۹ شاهد کلیدی (S1 تا S9)</h2>
-      <p>هر شاهد یافته اصلی، پیام راهبردی و پروژه‌های پاسخ‌دهنده را نشان می‌دهد.</p>
+      <p>هر شاهد یافته اصلی، پیام راهبردی و پروژه‌های پاسخ‌دهنده را نشان می‌دهد. اعداد مربوط به مخرج همان سؤال‌اند و نباید با سهم فروش ملی اشتباه گرفته شوند.</p>
     </div>
-
     <div class="grid2">
       <div class="card">
         <h3>S1 · پذیرش پیش از خرید</h3>
-        <p>اسنوا: انتخاب اول ۸٫۷٪ | دوو: ۱۷٫۹٪. مانع قیمت دوو ۴۷٫۴٪. آگاهی اسنوا ۴۶٫۴٪ به انتخاب تبدیل نمی‌شود.</p>
-        <p><strong>پاسخ:</strong> TV-09 + TV-03</p>
+        <p>اسنوا: آگاهی ۴۶٫۴٪ → انتخاب اول ۸٫۷٪. در ۶۵ اینچ و بالاتر انتخاب اول فقط ۱٫۴٪. دوو انتخاب اول ۱۷٫۹٪. مانع قیمت برای کسانی که دوو را در سبد بررسی نیاورده‌اند: ۴۷٫۴٪.</p>
+        <p class="note">پاسخ اصلی: TV-09 + TV-03</p>
       </div>
       <div class="card">
         <h3>S2 · تجربه خریداران فعلی</h3>
-        <p>رضایت اسنوا ۸٫۵۹ و مروّجان ۵۱٫۷٪. فاصله میان کیفیت باورشده و کیفیت تجربه‌شده وجود دارد.</p>
-        <p><strong>پاسخ:</strong> TV-09.6 + TV-04</p>
+        <p>رضایت اسنوا ۸٫۵۹ از ۱۰، مروّجان ۵۱٫۷٪. دوو رضایت ۸٫۶۸ و مروّجان ۴۸٫۶٪. فاصله معنادار میان کیفیت باورشده پیش از خرید و کیفیت تجربه‌شده پس از خرید وجود دارد.</p>
+        <p class="note">پاسخ اصلی: TV-09.6 + TV-04</p>
       </div>
       <div class="card">
-        <h3>S3 · ریتیل خودی</h3>
-        <p>ناموجودی دلیل اصلی فروش ازدست‌رفته (۷۵–۷۸٪). تبدیل فرصت به خرید متوسط است.</p>
-        <p><strong>پاسخ:</strong> TV-01 + TV-12</p>
+        <h3>S3 · ریتیل خودی (آزمایشگاه کنترل‌شده)</h3>
+        <p>حتی در شبکه خودی، ناموجودی دلیل اصلی فروش ازدست‌رفته است (۷۵٫۳٪ اسنوا و ۷۸٪ دوو). تبدیل فرصت به خرید متوسط است. فروشنده مسلط بدون موجودی، ظرفیت را از دست می‌دهد.</p>
+        <p class="note">پاسخ اصلی: TV-01 + TV-12</p>
       </div>
       <div class="card">
-        <h3>S4 · بازار مستقل</h3>
-        <p>آموزش فروشنده ضعیف (۸۷٪ اسنوا). برچسب قیمت صحیح فقط حدود ۳۵٪. پشتیبانی تجاری ناکافی.</p>
-        <p><strong>پاسخ:</strong> TV-02</p>
+        <h3>S4 · بازار مستقل و چندبرندی</h3>
+        <p>آموزش فروشنده انجام‌نشده یا قدیمی‌تر از شش ماه: ۸۷٫۸٪ اسنوا و ۸۳٫۸٪ دوو. برچسب قیمت صحیح فقط حدود ۳۳–۳۷٪. فروشنده پشتوانه کافی برای دفاع از پیشنهاد ندارد.</p>
+        <p class="note">پاسخ اصلی: TV-02</p>
       </div>
       <div class="card">
-        <h3>S5 · اقتصاد کانال</h3>
-        <p>تأمین نامنظم در ۵۰٪ مصاحبه‌ها. خرابی روی سفارش مجدد اثر زیاد دارد (۵۷٪).</p>
-        <p><strong>پاسخ:</strong> TV-01 + TV-04 + TV-05</p>
+        <h3>S5 · اقتصاد کانال و سفارش مجدد</h3>
+        <p>خدمات و گارانتی در ۷۱٫۴٪ مصاحبه‌ها دلیل خرید اعلام شده. تأمین نامنظم در ۵۰٪ موارد مطرح است. ۵۷٫۱٪ اثر خرابی بر سفارش مجدد را زیاد یا خیلی زیاد می‌دانند.</p>
+        <p class="note">پاسخ اصلی: TV-01 + TV-04 + TV-05</p>
       </div>
       <div class="card">
-        <h3>S6 · قیمت و ارزش</h3>
-        <p>مسئله گرانی مطلق نیست؛ تناسب قیمت با ارزش است. در بسیاری سایزها قیمت واقعی پایین‌تر از کره‌ای‌هاست.</p>
-        <p><strong>پاسخ:</strong> TV-03</p>
+        <h3>S6 · قیمت و معماری ارزش</h3>
+        <p>مسئله «گرانی مطلق» نیست. در بسیاری سایزها قیمت عملیاتی گروه پایین‌تر از برندهای کره‌ای است. مشتری ارزش و اطمینان متناسب با مبلغ را نمی‌بیند. کاهش عمومی قیمت توصیه نمی‌شود.</p>
+        <p class="note">پاسخ اصلی: TV-03</p>
       </div>
       <div class="card">
-        <h3>S7 · عمق ویترین</h3>
-        <p>سهم نمایش گروه ۱۱٫۷٪ در برابر ۱۷٫۳٪ مادیران. عمق نمایش ۲٫۶ در برابر حدود ۴ دستگاه.</p>
-        <p><strong>پاسخ:</strong> TV-02</p>
+        <h3>S7 · عمق ویترین و دیس‌پلی</h3>
+        <p>سهم نمایش گروه (اسنوا+دوو) در فروشگاه‌های چندبرندی ۱۱٫۷٪ در برابر ۱۷٫۳٪ مادیران. عمق نمایش ۲٫۶ دستگاه در برابر حدود ۴ دستگاه. حضور بدون نمایش مؤثر، ظرفیت محصول را بلااستفاده می‌گذارد.</p>
+        <p class="note">پاسخ اصلی: TV-02</p>
       </div>
       <div class="card">
-        <h3>S8 · خرابی و نرم‌افزار</h3>
-        <p>۴۵٪ رخدادهای خرابی مدل‌های جدید در ماه نصب. ۸۰٫۵۱٪ با برچسب مشکل نصب نرم‌افزار.</p>
-        <p><strong>پاسخ:</strong> TV-04 + TV-06</p>
+        <h3>S8 · خرابی زودهنگام و نرم‌افزار</h3>
+        <p>۴۵٪ رخدادهای خرابی مدل‌های جدید در ماه نصب رخ داده. ۸۰٫۵۱٪ با برچسب مشکل نصب نرم‌افزار ثبت شده‌اند. علت ریشه‌ای قطعی هنوز نیازمند تفکیک است.</p>
+        <p class="note">پاسخ اصلی: TV-04 + TV-06</p>
       </div>
       <div class="card">
-        <h3>S9 · تجربه آنلاین و خدمات</h3>
-        <p>خدمات دارایی نسبی مثبت است؛ نرم‌افزار، راه‌اندازی و مدل‌های خاص نیازمند اصلاح‌اند.</p>
-        <p><strong>پاسخ:</strong> TV-04 + TV-06</p>
+        <h3>S9 · خدمات و تجربه آنلاین</h3>
+        <p>خدمات پس از فروش دارایی نسبی مثبت گروه است. نرم‌افزار، راه‌اندازی اولیه و مدل‌های خاص نیازمند اصلاح‌اند تا تجربه مثبت خریداران فعلی به اعتماد پیش از خرید تبدیل شود.</p>
+        <p class="note">پاسخ اصلی: TV-04 + TV-06</p>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ۳. معماری برند و فیچر (منظر ۱ مدیرعامل) -->
+<!-- معماری برند -->
 <section class="section" id="brand">
   <div class="wrap">
     <div class="section-head">
-      <span class="tag">منظر ۱ مدیرعامل</span>
+      <span class="tag">منظر ۱ مدیرعامل · فیچر محصول برند</span>
       <h2>معماری برند و فیچر محصول</h2>
-      <p>هر برند بر اساس ارزش‌های خود فیچر می‌گیرد. قانون صریح: دان داخل دوو جایی ندارد.</p>
+      <p>هر برند بر اساس ارزش‌های خود تعریف می‌شود. قانون صریح و غیرقابل مذاکره: دان داخل دوو جایی ندارد.</p>
     </div>
-
     <div class="brand-panels">
       <div class="brand-panel">
         <div class="paneltop snow">
           <h3>اسنوا</h3>
-          <p>اعتماد · کیفیت · تجربه هوشمند خانه</p>
+          <p>اعتماد · کیفیت ادراک‌شده · تجربه هوشمند خانه</p>
         </div>
         <div class="panelbody">
-          <p><strong>فیچرهای اصلی:</strong></p>
+          <p style="margin-bottom:12px"><strong>نقش راهبردی:</strong> بازسازی پذیرش در سگمنت‌های ارزشمند (۶۵ اینچ و بالاتر، فناوری‌های بالاتر، بودجه بالاتر).</p>
+          <p><strong>فیچرهای اصلی مجاز:</strong></p>
           <div>
-            <span class="pill">عملکرد تصویر قابل مقایسه</span>
-            <span class="pill">پایداری نرم‌افزار</span>
+            <span class="pill">عملکرد تصویر قابل مقایسه و اثبات‌پذیر</span>
+            <span class="pill">پایداری و سرعت نرم‌افزار</span>
             <span class="pill">لانچر و سرویس‌های دان</span>
-            <span class="pill">تجربه پس از خرید قوی</span>
             <span class="pill">هاب IoT (مرکز کنترل خانه)</span>
+            <span class="pill">تجربه پس از خرید ممتاز</span>
           </div>
-          <div class="callout" style="margin-top:16px">
-            اسنوا باید در سگمنت‌های ارزشمند (۶۵+، فناوری بالاتر) پذیرش بسازد. تمرکز روی اثبات کیفیت در نقطه فروش.
+          <div class="callout" style="margin-top:18px">
+            اسنوا باید در نقطه فروش «کیفیت را اثبات» کند. پیام ارتباطات برند باید با تجربه واقعی فروشگاه و خدمات یکی باشد.
           </div>
         </div>
       </div>
-
       <div class="brand-panel">
         <div class="paneltop dew">
           <h3>دوو</h3>
           <p>ارزش خرید · معامله هوشمند · دسترسی</p>
         </div>
         <div class="panelbody">
-          <p><strong>فیچرهای اصلی:</strong></p>
+          <p style="margin-bottom:12px"><strong>نقش راهبردی:</strong> تبدیل پذیرش بهتر موجود به ارزش خرید روشن و اقتصاد معامله رقابتی.</p>
+          <p><strong>فیچرهای اصلی مجاز:</strong></p>
           <div>
-            <span class="pill">قیمت رقابتی شفاف</span>
-            <span class="pill">شرایط معامله قوی</span>
-            <span class="pill">سبد منطبق با تقاضا</span>
+            <span class="pill">قیمت رقابتی و شفاف</span>
+            <span class="pill">شرایط معامله قوی و قابل دفاع</span>
+            <span class="pill">سبد منطبق با تقاضای واقعی</span>
             <span class="pill">پوشش سایز و مدل هدف</span>
           </div>
-          <div class="warning" style="margin-top:16px">
-            <strong>قانون صریح:</strong> دان (Dan) داخل برند دوو جایی ندارد. دوو هویت مستقل ارزش‌محور دارد.
+          <div class="warning" style="margin-top:18px">
+            <strong>قانون صریح هیئت‌مدیره:</strong> دان (Dan) داخل برند دوو تعریف نمی‌شود و عرضه نمی‌گردد. دوو هویت مستقل ارزش‌محور دارد.
           </div>
         </div>
       </div>
@@ -372,182 +294,239 @@ td:first-child { font-weight: 700; color: #183958; }
   </div>
 </section>
 
-<!-- ۴. مزیت رقابتی (منظر ۲ مدیرعامل) -->
+<!-- مزیت رقابتی -->
 <section class="section alt" id="advantage">
   <div class="wrap">
     <div class="section-head">
-      <span class="tag">منظر ۲ مدیرعامل</span>
-      <h2>مزیت رقابتی محصول</h2>
-      <p>سه لایه مزیت که باید شفاف و قابل دفاع تعریف شوند.</p>
+      <span class="tag">منظر ۲ مدیرعامل · مزیت رقابتی محصول</span>
+      <h2>سه لایه مزیت رقابتی</h2>
+      <p>این سه لایه باید شفاف، قابل اثبات و قابل اجرای عملیاتی باشند. ادعای بدون ظرفیت اجرا، ضد برند است.</p>
     </div>
-
     <div class="grid3">
       <div class="card">
         <h3>۱. لانچر و سرویس‌های دان</h3>
         <ul>
-          <li>نسخه مستقل برای مدل‌های اسنوا</li>
-          <li>نسخه روی Google TV (در صورت تصمیم فنی و مجوز)</li>
-          <li>مرز دقیق قابلیت‌ها برای هر برند مشخص شود</li>
-          <li>دوو از دان جدا می‌ماند</li>
+          <li>دان فقط روی محصولات تعریف‌شده اسنوا و باکس</li>
+          <li>نسخه مستقل یا روی Google TV (با رعایت الزامات)</li>
+          <li>مرز قابلیت‌ها برای هر محصول روشن باشد</li>
+          <li>دوو از اکوسیستم دان جدا می‌ماند</li>
         </ul>
       </div>
       <div class="card">
         <h3>۲. هاب IoT</h3>
         <ul>
           <li>تلویزیون مرکز کنترل ساده لوازم سازگار گروه</li>
-          <li>فقط مدل‌های دقیق و ایمن (لباسشویی و یخچال مشخص)</li>
-          <li>کنترل محلی حفظ شود؛ اینترنت قطع شد کار کند</li>
-          <li>پروژه TV-08 (آزمون محدود)</li>
+          <li>فقط مدل‌های دقیق و تأییدشده (لباسشویی و یخچال مشخص)</li>
+          <li>کنترل محلی در قطع اینترنت حفظ شود</li>
+          <li>ایمنی و حریم خصوصی پیش‌شرط توسعه است</li>
         </ul>
       </div>
       <div class="card">
         <h3>۳. SLA خدمات</h3>
         <ul>
           <li><strong>۳۰ روز بازگشت بدون چون‌وچرا</strong></li>
+          <li>سیاست واحد ۱۵ / ۳۰ / ۶۰ روزه</li>
           <li>نصب سالم + قطعه + پیگیری همان خریدار</li>
-          <li>سیاست واحد ۱۵/۳۰/۶۰ روزه</li>
-          <li>اتصال مستقیم به TV-04</li>
+          <li>فقط پس از آمادگی عملیات وعده داده شود</li>
         </ul>
       </div>
     </div>
+  </div>
+</section>
 
-    <div class="good">
-      مزیت رقابتی فقط وقتی پایدار است که در نقطه فروش قابل دیدن، قابل توضیح و قابل اعتماد باشد. ادعای بدون شاهد، ضد برند است.
+<!-- الزامات دان -->
+<section class="section" id="dan">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="tag">الزامات فنی و محصولی دان</span>
+      <h2>وضعیت فعلی و الزامات دان روی Google TV</h2>
+      <p>در شرایط فعلی ۳ محصول برای دان پیش‌بینی شده است: دو تلویزیون + یک اندروید باکس. هرگونه توسعه باید با الزامات زیر هم‌خوان باشد.</p>
+    </div>
+    <div class="grid2">
+      <div class="card">
+        <h3>محصولات تعریف‌شده فعلی</h3>
+        <ul>
+          <li>تلویزیون ۱ (اسنوا) – میزبان دان</li>
+          <li>تلویزیون ۲ (اسنوا) – میزبان دان</li>
+          <li>اندروید باکس – میزبان دان</li>
+        </ul>
+        <div class="info" style="margin-top:14px">
+          هیچ محصول دوو در لیست میزبان دان قرار ندارد و نباید قرار بگیرد.
+        </div>
+      </div>
+      <div class="card">
+        <h3>الزامات کلیدی برای Google TV</h3>
+        <ul>
+          <li>سازگاری با الزامات Google (CTS / GTS / Certification path)</li>
+          <li>لانچر و سرویس‌های دان نباید تجربه پایه Google TV را تخریب کنند</li>
+          <li>قابلیت آفلاین برای کارکردهای حیاتی حفظ شود</li>
+          <li>به‌روزرسانی امن و کنترل‌شده</li>
+          <li>جداسازی واضح هویت برند اسنوا از لایه سیستم‌عامل</li>
+          <li>آزمون پایداری، زمان بوت و منو قبل از عرضه گسترده</li>
+        </ul>
+      </div>
+    </div>
+    <div class="warning">
+      <strong>نکته مدیریتی:</strong> قابلیت تازه نباید تجربه پایه را خراب کند. هر نسخه دان قبل از rollout گسترده باید از دروازه کیفیت و پایداری عبور کند (مرتبط با TV-06).
     </div>
   </div>
 </section>
 
-<!-- ۵. کمک به سایر محصولات (منظر ۳ مدیرعامل) -->
-<section class="section" id="cross">
+<!-- کمک به گروه -->
+<section class="section alt" id="cross">
   <div class="wrap">
     <div class="section-head">
-      <span class="tag">منظر ۳ مدیرعامل</span>
-      <h2>کمک به سایر محصولات تولیدی گروه</h2>
-      <p>تلویزیون باید اهرم فروش یخچال، لباسشویی و سایر لوازم شود؛ نه پروژه جداگانه.</p>
+      <span class="tag">منظر ۳ مدیرعامل · کمک به سایر محصولات</span>
+      <h2>تلویزیون به‌عنوان اهرم فروش گروه</h2>
+      <p>تلویزیون باید به فروش یخچال، لباسشویی و سایر لوازم کمک کند؛ نه اینکه پروژه جداگانه‌ای باشد که منابع را پراکنده کند.</p>
     </div>
-
     <div class="grid2">
       <div class="card">
         <h3>خانه متصل انتخاب (TV-08)</h3>
-        <p>تلویزیون مرکز کنترل ساده لوازم سازگار. آزمون محدود روی مدل‌های دقیق لباسشویی و یخچال. بدون تعهد تعداد خانوار پیش از نمونه عملیاتی.</p>
+        <p>آزمون محدود کنترل لوازم سازگار از طریق تلویزیون. فقط مدل‌های دقیق و ایمن. بدون تعهد تعداد خانوار پیش از اثبات استفاده واقعی و هزینه پشتیبانی قابل قبول.</p>
       </div>
       <div class="card">
         <h3>باشگاه خانواده انتخاب (TV-11)</h3>
-        <p>تعویض قدیمی با نو، عضویت اختیاری، پیوند خانواده. فرصت ایجاد ترافیک و فروش متقاطع برای کل سبد گروه.</p>
+        <p>تعویض قدیمی با نو، عضویت اختیاری با مراقبت روشن، و پیوند خانواده. فرصت ایجاد ترافیک و فروش متقاطع برای کل سبد گروه صنعتی انتخاب.</p>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ۶. فروشگاه تخصصی (منظر ۴ مدیرعامل) -->
-<section class="section alt" id="retail">
+<!-- فروشگاه تخصصی -->
+<section class="section" id="retail">
   <div class="wrap">
     <div class="section-head">
-      <span class="tag">منظر ۴ مدیرعامل</span>
-      <h2>فروشگاه تخصصی + نفر متخصص</h2>
-      <p>هسته پروژه TV-02. بدون موجودی پایدار و بسته فروش یکپارچه، فروشگاه تخصصی نتیجه کامل نمی‌دهد.</p>
+      <span class="tag">منظر ۴ مدیرعامل · فروشگاه تخصصی و نفر متخصص</span>
+      <h2>شبکه تخصصی + تیم فروش متخصص</h2>
+      <p>هسته پروژه TV-02. بدون موجودی پایدار مدل‌های کلیدی و بسته فروش یکپارچه، فروشگاه تخصصی به نتیجه کامل نمی‌رسد.</p>
     </div>
-
     <div class="grid3">
       <div class="card">
-        <h3>تیم تخصصی فروش</h3>
-        <p>آموزش مستمر، مقایسه محصول، نمایش عملی، قیمت روشن و شرایط معامله.</p>
+        <h3>تیم تخصصی</h3>
+        <p>آموزش مستمر، مقایسه محصول، نمایش عملی، قیمت روشن و شرایط معامله. ارزیابی با توصیه فروشنده و فروش نهایی.</p>
       </div>
       <div class="card">
-        <h3>شبکه و کرنر شاپ</h3>
-        <p>موج‌های توسعه مشروط به اثبات فروش و سود افزایشی در نقاط شاهد.</p>
+        <h3>کرنر و فروشگاه تخصصی</h3>
+        <p>توسعه موجی و مشروط به اثبات فروش و سود افزایشی در نقاط شاهد. شعبه مستقل پرهزینه پیش از توجیه ایجاد نشود.</p>
       </div>
       <div class="card">
-        <h3>فروش دیجیتال</h3>
-        <p>هم‌راستا با موجودی واقعی و تجربه یکپارچه آفلاین–آنلاین.</p>
+        <h3>فروش دیجیتال هم‌راستا</h3>
+        <p>موجودی واقعی، تجربه یکپارچه آفلاین–آنلاین و جلوگیری از اختلاف قیمت و شرایط کانال‌ها.</p>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ۷. نقشه ۱۲ پروژه -->
+<!-- بنچمارک -->
+<section class="section alt" id="benchmark">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="tag">مرجع رقابتی</span>
+      <h2>بنچمارک و درس‌های کلیدی</h2>
+      <p>هدف کپی‌برداری نیست؛ استخراج اصل‌های قابل اجرا در شرایط ایران است.</p>
+    </div>
+    <div class="bench">
+      <div class="benchcard">
+        <div class="benchlogo">عمق ویترین</div>
+        <p>مادیران با سهم نمایش بالاتر و عمق بیشتر دستگاه در فروشگاه‌های چندبرندی، فرصت مقایسه بیشتری ایجاد کرده است.</p>
+        <div class="lesson">درس: حضور فیزیکی بدون عمق نمایش مؤثر، ظرفیت محصول را هدر می‌دهد.</div>
+      </div>
+      <div class="benchcard">
+        <div class="benchlogo">ارزش در برابر قیمت</div>
+        <p>در بسیاری سایزها قیمت عملیاتی گروه پایین‌تر از برندهای کره‌ای است، اما ادراک ارزش هنوز فاصله دارد.</p>
+        <div class="lesson">درس: کاهش کور قیمت توصیه نمی‌شود. معماری ارزش مدل‌محور لازم است.</div>
+      </div>
+      <div class="benchcard">
+        <div class="benchlogo">تجربه پس از خرید</div>
+        <p>رضایت و تمایل به توصیه خریداران فعلی گروه قابل قبول است، اما این تجربه به اعتماد پیش از خرید تبدیل نشده.</p>
+        <div class="lesson">درس: تجربه مثبت باید با شاهد قابل مشاهده به بازار پیش از خرید منتقل شود.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ۱۲ پروژه -->
 <section class="section" id="projects">
   <div class="wrap">
     <div class="section-head">
       <span class="tag">پاسخ اجرایی</span>
-      <h2>۱۲ کلان‌پروژه و همپوشانی‌ها</h2>
-      <p>هر پروژه به کدام شاهد، کدام منظر و کدام لنز مدیرعامل پاسخ می‌دهد.</p>
+      <h2>نقشه ۱۲ کلان‌پروژه</h2>
+      <p>هر پروژه به شواهد، منظرهای عارضه‌یابی و لنزهای مدیرعامل متصل است. توسعه بدون عبور از دروازه‌ها مجاز نیست.</p>
     </div>
-
     <div class="table-wrap">
       <table>
         <thead>
           <tr>
             <th>کد</th>
-            <th>پروژه</th>
+            <th>عنوان پروژه</th>
             <th>شاهد اصلی</th>
             <th>منظر مدیرعامل</th>
-            <th>اولویت اجرا</th>
+            <th>مرحله اجرا</th>
           </tr>
         </thead>
         <tbody>
-          <tr><td>TV-05</td><td>داده معتبر و اقتصاد مدل</td><td>همه</td><td>—</td><td>پایه</td></tr>
-          <tr><td>TV-12</td><td>هماهنگی زنجیره ارزش</td><td>S3–S5</td><td>—</td><td>عملیاتی</td></tr>
-          <tr><td>TV-01</td><td>پایداری عرضه و نقد</td><td>S3, S5</td><td>—</td><td>فوری</td></tr>
-          <tr><td>TV-03</td><td>معماری برند و سبد</td><td>S1, S6</td><td>۱</td><td>پیش‌شرط</td></tr>
-          <tr><td>TV-04</td><td>تضمین تجربه و SLA</td><td>S8, S9</td><td>۲</td><td>پیش‌شرط</td></tr>
-          <tr><td>TV-06</td><td>دان سریع و پایدار</td><td>S8, S9</td><td>۲</td><td>پیش‌شرط</td></tr>
-          <tr><td>TV-02</td><td>تیم و شبکه تخصصی</td><td>S3, S4, S7</td><td>۴</td><td>آزمون</td></tr>
-          <tr><td>TV-09</td><td>بازسازی اعتماد</td><td>S1, S2</td><td>۱</td><td>آزمون</td></tr>
-          <tr><td>TV-07</td><td>رشد سودآور سهم</td><td>—</td><td>—</td><td>نتیجه</td></tr>
-          <tr><td>TV-10</td><td>اول ببین، بعد بخر</td><td>S1, S7</td><td>۲</td><td>خلاقانه</td></tr>
-          <tr><td>TV-11</td><td>باشگاه خانواده</td><td>—</td><td>۳</td><td>خلاقانه</td></tr>
-          <tr><td>TV-08</td><td>خانه متصل</td><td>—</td><td>۳</td><td>فرصت</td></tr>
+          <tr><td>TV-05</td><td>داده معتبر، فروش نهایی و اقتصاد مدل</td><td>زیرساخت همه</td><td>—</td><td>پایه</td></tr>
+          <tr><td>TV-12</td><td>هماهنگی زنجیره تأمین تا خدمات</td><td>S3–S5</td><td>—</td><td>عملیاتی</td></tr>
+          <tr><td>TV-01</td><td>پایداری عرضه و چرخه نقد</td><td>S3, S5</td><td>—</td><td>فوری</td></tr>
+          <tr><td>TV-03</td><td>معماری برند و سبد رقابتی</td><td>S1, S6</td><td>۱</td><td>پیش‌شرط</td></tr>
+          <tr><td>TV-04</td><td>تضمین تجربه، کیفیت میدانی و SLA</td><td>S8, S9</td><td>۲</td><td>پیش‌شرط</td></tr>
+          <tr><td>TV-06</td><td>دان سریع، پایدار و سازگار</td><td>S8, S9</td><td>۲</td><td>پیش‌شرط</td></tr>
+          <tr><td>TV-02</td><td>تیم تخصصی و شبکه فروشگاهی</td><td>S3, S4, S7</td><td>۴</td><td>آزمون</td></tr>
+          <tr><td>TV-09</td><td>بازسازی اعتماد با شاهد محصول</td><td>S1, S2</td><td>۱</td><td>آزمون</td></tr>
+          <tr><td>TV-07</td><td>رشد سودآور سهم فروش گروه</td><td>—</td><td>—</td><td>نتیجه مشروط</td></tr>
+          <tr><td>TV-10</td><td>«اول ببین، بعد بخر»</td><td>S1, S7</td><td>۲</td><td>خلاقانه</td></tr>
+          <tr><td>TV-11</td><td>باشگاه خانواده انتخاب</td><td>—</td><td>۳</td><td>خلاقانه</td></tr>
+          <tr><td>TV-08</td><td>خانه متصل انتخاب</td><td>—</td><td>۳</td><td>فرصت آزمایشی</td></tr>
         </tbody>
       </table>
     </div>
   </div>
 </section>
 
-<!-- ۸. اجرا و تصمیم -->
+<!-- تصمیمات -->
 <section class="section alt" id="gates">
   <div class="wrap">
     <div class="section-head">
-      <span class="tag">تصمیم هیئت‌مدیره</span>
-      <h2>ترتیب اجرا و دروازه‌ها</h2>
-      <p>توسعه شبکه و تبلیغ گسترده فقط پس از اثبات نتیجه در نقاط شاهد مجاز است.</p>
+      <span class="tag">ارائه به هیئت‌مدیره</span>
+      <h2>ترتیب اجرا، دروازه‌ها و تصمیمات پیشنهادی</h2>
+      <p>با احترام به رویکرد دقیق و مسئولیت‌پذیر مدیریت عامل محترم، پیشنهادها مشروط به عبور از دروازه‌های تعریف‌شده هستند.</p>
     </div>
-
     <div class="grid2">
-      <div class="card project">
-        <h3>ترتیب اجباری</h3>
-        <ol style="padding-right:18px; font-size:13.5px; color:var(--muted); line-height:2">
-          <li>TV-05 داده و اقتصاد مدل</li>
-          <li>TV-12 هماهنگی زنجیره</li>
-          <li>TV-01 رفع کمبود فوری</li>
-          <li>TV-03 + TV-04 + TV-06 پیش‌شرط محصول و کیفیت</li>
-          <li>TV-02 + TV-09 آزمون شبکه و اعتماد</li>
-          <li>TV-07 رشد مشروط</li>
+      <div class="card">
+        <h3>ترتیب اجباری اجرا</h3>
+        <ol style="padding-right:20px;font-size:13.5px;color:var(--muted);line-height:2.1">
+          <li>TV-05 — داده معتبر و اقتصاد مدل</li>
+          <li>TV-12 — هماهنگی کل زنجیره ارزش</li>
+          <li>TV-01 — رفع فوری کمبود مدل‌های سالم و سودآور</li>
+          <li>TV-03 + TV-04 + TV-06 — پیش‌شرط محصول، کیفیت و نرم‌افزار</li>
+          <li>TV-02 + TV-09 — آزمون شبکه تخصصی و بازسازی اعتماد</li>
+          <li>TV-07 — رشد مشروط سهم بازار</li>
         </ol>
       </div>
       <div class="card">
-        <h3>شرط‌های حیاتی</h3>
+        <h3>تصمیمات کلیدی پیشنهادی</h3>
         <ul>
-          <li>تعریف، مخرج، دوره و پوشش هر شاخص روشن باشد</li>
-          <li>داده ناقص با برچسب «برآورد» گزارش شود</li>
-          <li>۳۰ روز بازگشت فقط پس از آمادگی عملیات وعده داده شود</li>
-          <li>دان داخل دوو تعریف نشود</li>
-          <li>هدف ۲۵–۳۰٪ سهم بازار مشروط به سود و موجودی سالم است</li>
+          <li>تأیید قانون جداسازی دان از برند دوو</li>
+          <li>تأیید ۳ محصول فعلی میزبان دان (۲ تلویزیون + ۱ باکس)</li>
+          <li>تأیید سیاست ۳۰ روز بازگشت مشروط به آمادگی عملیات</li>
+          <li>الزام عبور همه طرح‌های توسعه‌ای از برآورد اقتصادی (TV-12.5)</li>
+          <li>هدف ۲۵–۳۰٪ سهم بازار فقط به‌عنوان هدف مشروط سودآور</li>
         </ul>
       </div>
     </div>
-
-    <div class="callout" style="margin-top:24px">
-      <strong>حکم نهایی:</strong> عارضه تلویزیون بحران تک‌علتی نیست. برای اسنوا ابتدا پذیرش و اعتماد بازسازی شود؛ برای دوو پذیرش موجود به ارزش خرید و معامله رقابتی تبدیل شود. محصول، دسترسی، قیمت، کانال، فروشنده و تجربه پس از خرید باید یک وعده واحد و قابل اثبات بسازند.
+    <div class="callout" style="margin-top:28px">
+      <strong>حکم نهایی قابل دفاع در هیئت‌مدیره:</strong><br>
+      عارضه تلویزیون بحران تک‌علتی نیست. برای اسنوا باید ابتدا پذیرش و اعتماد به پیشنهاد محصول بازسازی شود. برای دوو باید پذیرش موجود به ارزش خرید و معامله رقابتی‌تر تبدیل شود. محصول، دسترسی، قیمت، کانال، فروشنده و تجربه پس از خرید باید یک وعده واحد و قابل اثبات بسازند. هر تصمیمی که این سه حلقه (محصول دیده‌شدنی، عرضه پایدار، معامله اقتصادی) را هم‌زمان نبیند، بخشی از مسئله را حل و بخش دیگری را تشدید می‌کند.
     </div>
   </div>
 </section>
 
-<!-- FOOTER -->
 <footer class="footer">
   <div class="wrap">
-    <p>گروه صنعتی انتخاب · معاونت بازاریابی · تیم پایش و هوش بازار</p>
-    <p style="margin-top:8px; opacity:.7">مبنای شواهد: گزارش عارضه‌یابی ۳۶۰ درجه (مهر ۱۴۰۵) + برنامه راهبردی اجرایی ۱۲ماهه (آبان ۱۴۰۵)</p>
+    <p style="font-weight:700;margin-bottom:8px">گروه صنعتی انتخاب · معاونت بازاریابی · تیم پایش و هوش بازار</p>
+    <p>مبنای شواهد: گزارش عارضه‌یابی ۳۶۰ درجه صنعت تلویزیون (مهر ۱۴۰۵) + برنامه راهبردی و اجرایی توسعه کسب‌وکار تلویزیون (آبان ۱۴۰۵)</p>
+    <p style="margin-top:12px;opacity:.75;font-size:12.5px">این سند برای ارائه به هیئت‌مدیره تهیه شده و محرمانه است. اعداد دارای تعریف، مخرج و دوره مشخص هستند و باید با تطبیق G1 نهایی شوند.</p>
   </div>
 </footer>
 
