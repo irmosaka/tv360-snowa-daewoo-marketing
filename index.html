@@ -1,151 +1,376 @@
 <!doctype html>
-<html lang="fa" dir="rtl"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>استراتژی بازاریابی ۳۶۰ تلویزیون اسنوا و دوو | ارائه مدیریتی</title>
-<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>تلویزیون در گروه انتخاب | ارائه مدیریتی محصول و بازاریابی</title>
+<link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <style>
-:root{--navy:#0b2037;--navy2:#173b5c;--gold:#d2aa75;--ink:#152b40;--muted:#65788b;--paper:#f4f6f8;--line:#dce3e9}
-*{box-sizing:border-box}html,body{margin:0;width:100%;height:100%;overflow:hidden;background:#071727;color:var(--ink);font-family:'Vazirmatn',sans-serif}
-#deck{height:100%;display:flex;align-items:center;justify-content:center;padding:22px}
-.slide{display:none;position:relative;width:min(96vw, calc(96vh * 16 / 9));height:min(92vh, calc(96vw * 9 / 16));aspect-ratio:16/9;background:#f5f7f9;border-radius:12px;overflow:auto;padding:4.2% 5%;box-shadow:0 22px 80px #0008;scrollbar-width:thin}
-.slide.active{display:block;animation:enter .28s ease-out}@keyframes enter{from{opacity:.3;transform:translateX(-10px)}to{opacity:1;transform:none}}
-.slide:before{content:"";position:absolute;top:0;right:0;width:100%;height:7px;background:linear-gradient(90deg,var(--gold),#2a7778,var(--navy2))}
-.cover-slide{background:radial-gradient(circle at 18% 20%,#24606b 0,transparent 35%),linear-gradient(120deg,#071a2d,#123b5d 65%,#0e5354);color:#fff}
-.cover-slide h1,.cover-slide h2,.cover-slide p{color:#fff}.cover-slide .eyebrow,.cover-slide .eyebrow2{color:#e7c18e}
-.slide-head{margin-bottom:22px}.slide-head>span{font-size:12px;color:#a47a47;font-weight:800}.slide-head h1{font-size:clamp(22px,2.25vw,34px);line-height:1.55;color:#102c47;margin:7px 0}.slide-head p{font-size:14px;color:var(--muted);max-width:1050px}
-h2{font-size:clamp(19px,2vw,29px)}h3{font-size:16px}p,li{line-height:1.8}.wrap{max-width:none!important;padding:0!important}.section{padding:0!important;background:transparent!important}.section.dark{background:#102b49!important;color:white!important}.section.alt{background:transparent!important}
-.card,.chartbox,.phase,.gate div{box-shadow:none!important}.card{border-radius:10px!important}.head h2{color:#102c47}.head p{color:#66798c}.dark .head h2{color:white}.dark .head p{color:#c3d0dc}
-.hero{padding:0!important;background:transparent!important}.hero-grid{grid-template-columns:1.5fr .7fr!important}.hero h1{font-size:clamp(30px,3.3vw,48px)!important}.hero-art{background:#ffffff12}
-.top,.foot,.controls,.progress,.links{display:none!important}.kpis{margin-top:16px!important;grid-template-columns:repeat(5,1fr)!important}.section .wrap>div{max-width:100%}
-table{font-size:10px!important}td,th{padding:7px!important}.matrix td:first-child,.matrix th:first-child{min-width:150px!important}
-.slide-footer{position:fixed;bottom:9px;right:24px;left:24px;display:flex;justify-content:space-between;color:#b6c3ce;font-size:11px;pointer-events:none}
-#toolbar{position:fixed;bottom:18px;left:50%;transform:translateX(-50%);display:flex;align-items:center;gap:8px;background:#0b2037eF;padding:8px 12px;border:1px solid #476078;border-radius:30px;z-index:99;color:white;font-size:12px}
-#toolbar button{border:0;background:#d2aa75;color:#102b49;border-radius:22px;padding:8px 14px;font:inherit;font-weight:800;cursor:pointer}#toolbar button.secondary{background:#294966;color:white}#counter{min-width:64px;text-align:center;font-variant-numeric:tabular-nums}#progress{position:fixed;top:0;right:0;height:4px;background:var(--gold);z-index:100;width:0}
-.intro{position:fixed;inset:0;background:radial-gradient(circle at 50% 35%,#1b5264,#081b30 65%);z-index:200;display:flex;align-items:center;justify-content:center;flex-direction:column;color:white;animation:introOut 1s ease 3.2s forwards}
-.intro img{width:min(34vw,280px);max-height:140px;object-fit:contain;filter:drop-shadow(0 8px 24px #0006);animation:logoIn 1.1s cubic-bezier(.2,.8,.2,1) both}
-.intro h1{margin:28px 0 5px;font-size:clamp(23px,3vw,38px);opacity:0;animation:fadeUp .8s ease 1s forwards}.intro p{color:#d6e1e9;opacity:0;animation:fadeUp .8s ease 1.45s forwards}
-@keyframes logoIn{from{opacity:0;transform:scale(.72) rotate(-4deg);filter:blur(8px)}to{opacity:1;transform:scale(1);filter:blur(0)}}@keyframes fadeUp{from{opacity:0;transform:translateY(15px)}to{opacity:1;transform:none}}@keyframes introOut{to{opacity:0;visibility:hidden;pointer-events:none}}
-.metric-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin:18px 0}.metric{background:#fff;border:1px solid var(--line);border-radius:12px;padding:15px}.metric small,.metric span{display:block;color:#718294;font-size:11px}.metric b{display:block;color:#123654;font-size:30px;margin:5px 0}
-.two-col{display:grid;grid-template-columns:1fr 1fr;gap:16px}.panel{background:white;border:1px solid var(--line);border-radius:12px;padding:18px}.panel h3{margin:0 0 14px;color:#173b5c}.bar-row{display:grid;grid-template-columns:140px 1fr 55px;align-items:center;gap:9px;margin:12px 0;font-size:12px}.bar-row>div{height:13px;background:#edf1f4;border-radius:20px;overflow:hidden}.bar-row i{display:block;height:100%;background:linear-gradient(90deg,#1d777b,#d2aa75);border-radius:20px}.bar-row b{font-size:12px}.caveat,.source-note{font-size:10px;color:#6e7f90;margin-top:12px}.big-stat{display:flex;align-items:center;gap:14px;border-bottom:1px solid #e5eaee;padding:10px 0}.big-stat b{font-size:24px;color:#163b5b;min-width:145px}.big-stat span{font-size:12px;color:#617487}
-.diagnosis-slide{background:linear-gradient(145deg,#f8fafb,#e9eff4)}.thesis{font-size:clamp(19px,2vw,27px);line-height:1.9;font-weight:700;color:#163b5b;border-right:5px solid var(--gold);padding:10px 20px;background:white;border-radius:8px}.chain{display:flex;align-items:center;justify-content:space-between;gap:8px;margin:28px 0}.chain div{background:#102b49;color:white;border-radius:10px;padding:14px;flex:1;min-height:105px}.chain div b{display:block;color:var(--gold);font-size:20px}.chain strong,.chain small{display:block}.chain small{color:#c7d5df;font-size:11px;margin-top:5px}.chain i{color:#b18755;font-size:22px}.brand-diagnosis{display:grid;grid-template-columns:1fr 1fr;gap:14px}.brand-diagnosis article{background:white;border:1px solid var(--line);border-radius:10px;padding:16px}.brand-diagnosis h3{color:#173b5c;margin:0}.brand-diagnosis p{font-size:13px;color:#566a7d}
-.photo-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.photo-grid figure{margin:0;background:#fff;border:1px solid var(--line);border-radius:10px;overflow:hidden}.photo-grid img{width:100%;height:210px;object-fit:cover;display:block}.photo-grid figcaption{padding:9px;font-size:10px;color:#65788b}a{color:#9a6c35}.note-band{margin-top:16px;background:#eaf1f5;border-right:4px solid var(--gold);padding:13px 16px;border-radius:8px;font-size:13px}
-@media(max-width:800px){#deck{padding:4px}.slide{width:98vw;height:90vh;padding:18px;aspect-ratio:auto}.metric-grid{grid-template-columns:repeat(2,1fr)}.two-col,.brand-diagnosis{grid-template-columns:1fr}.chain{flex-wrap:wrap}.chain div{min-width:28%}.photo-grid{grid-template-columns:1fr}}
-@media print{html,body{overflow:visible;background:white}#deck{display:block;padding:0}.slide{display:block!important;width:13.333in;height:7.5in;page-break-after:always;box-shadow:none;border-radius:0;overflow:hidden;padding:.45in .6in}#toolbar,#progress,.intro{display:none!important}}
-</style></head><body>
-<div id="progress"></div><div id="deck"><section class="slide cover-slide" id="thesis"><div class="wrap hero-grid"><div><div class="eyebrow">گزارش مدیریتی یکپارچه · آذر ۱۴۰۵ تا آبان ۱۴۰۶</div><h1>از ۲۲ پروژه موازی به ۱۰ برنامه تحول یکپارچه؛ تبدیل ظرفیت تولید به انتخاب، فروش و سود پایدار</h1><p>عارضه تلویزیون اسنوا و دوو تک‌علتی نیست. محصول باید در مقایسه برنده باشد؛ مدل کلیدی باید در کانال هدف موجود باشد؛ فروشنده باید بتواند ارزش آن را اثبات کند؛ و معامله باید برای مشتری، کانال و گروه اقتصادی بماند. این برنامه، ۱۰ پروژه D.Point را با ۱۲ کلان‌پروژه TV در یک سبد اجرایی واحد هم‌پوشانی و یکپارچه می‌کند.</p><div class="actions"><a class="btn gold" href="#portfolio">مشاهده سبد پروژه‌ها</a><a class="btn outline" href="#evidence">مبنای شواهد</a></div><p class="tagline">اصل راهبردی: محصول قابل دفاع × عرضه پایدار × تجربه قابل اثبات × اقتصاد معامله</p></div><div class="hero-art"><svg viewBox="0 0 560 360" role="img" aria-label="تصویر مفهومی تلویزیون و اکوسیستم خانه متصل"><defs><linearGradient id="screen" x1="0" x2="1" y1="0" y2="1"><stop stop-color="#18a19a"/><stop offset=".55" stop-color="#245d83"/><stop offset="1" stop-color="#142a49"/></linearGradient><linearGradient id="gold" x1="0" x2="1"><stop stop-color="#e9c58f"/><stop offset="1" stop-color="#b7834e"/></linearGradient></defs><circle cx="430" cy="85" r="62" fill="#ffffff" opacity=".05"/><path d="M30 300 Q280 230 530 300" fill="none" stroke="#ffffff" opacity=".14" stroke-width="2"/><rect x="80" y="45" width="390" height="230" rx="17" fill="#081a2d" stroke="#9fb5c8" stroke-width="4"/><rect x="92" y="57" width="366" height="206" rx="9" fill="url(#screen)"/><path d="M92 190 Q175 105 250 168 T458 115 V263 H92Z" fill="#0e293f" opacity=".58"/><path d="M92 218 Q190 145 278 200 T458 165 V263 H92Z" fill="#1aa19a" opacity=".5"/><circle cx="360" cy="115" r="32" fill="url(#gold)" opacity=".9"/><path d="M245 276 L305 276 L320 305 L230 305Z" fill="#9aafc2"/><rect x="195" y="305" width="160" height="9" rx="4" fill="#9aafc2"/><rect x="18" y="132" width="46" height="76" rx="10" fill="#ffffff" opacity=".12" stroke="#d4e2ee"/><circle cx="41" cy="151" r="7" fill="#e8c18c"/><path d="M31 174 H51 M31 184 H48" stroke="#d4e2ee" stroke-width="3" stroke-linecap="round"/><rect x="488" y="124" width="54" height="78" rx="10" fill="#ffffff" opacity=".12" stroke="#d4e2ee"/><path d="M502 145 h26 M502 157 h26 M502 169 h19" stroke="#d4e2ee" stroke-width="3" stroke-linecap="round"/><circle cx="515" cy="187" r="5" fill="#e8c18c"/><path d="M64 170 C90 170 90 170 110 170 M470 170 C485 170 480 170 490 170" stroke="#e8c18c" stroke-width="2" stroke-dasharray="5 5" fill="none"/><text x="280" y="338" fill="#e9c99f" text-anchor="middle" font-size="14" font-family="Tahoma">محصول · نرم‌افزار · خانه · فروش · خدمات</text></svg></div></div></section>
+:root{--bg:#f4f6f8;--card:#fff;--ink:#152b40;--muted:#5a6d80;--line:#d8e0e8;--tint:#eaf1f4;--navy:#0b2037;--gold:#d2aa75;--teal:#1a8a82;--red:#b6534d;--hd:#102c47}
+*{box-sizing:border-box}html,body{height:100%;margin:0}
+body{font-family:'Vazirmatn',Tahoma,sans-serif;background:#071727;color:var(--ink);display:flex;align-items:center;justify-content:center;overflow:hidden}
+#stage{position:relative;width:min(96vw,calc((100vh - 70px)*16/9));aspect-ratio:16/9}
+.slide{display:none;position:absolute;inset:0;background:var(--bg);border-radius:10px;border-top:4px solid var(--gold);overflow:auto;padding:2% 3%;font-size:1.12cqw;line-height:1.65;box-shadow:0 20px 60px #0007}
+.slide.active{display:block;animation:in .28s ease-out}
+@keyframes in{from{opacity:.3;transform:translateX(-8px)}to{opacity:1;transform:none}}
+.cover{background:radial-gradient(circle at 20% 25%,#24606b 0,transparent 40%),linear-gradient(125deg,#071a2d,#123b5d 55%,#0e5354);color:#fff;border-top:none;display:flex;align-items:center}
+.cover h1,.cover p,.cover .eb{color:#fff}
+.cover .eb{color:#e7c18e}
+h1{font-size:1.5em;line-height:1.35;margin:.1em 0 .35em;color:var(--hd)}
+h3{margin:0 0 .2em;font-size:.96em;color:var(--hd)}
+p{margin:.12em 0;font-size:.88em;color:var(--muted)}
+.eb{font-size:.74em;font-weight:800;color:#a47a47}
+.g2{display:grid;grid-template-columns:1fr 1fr;gap:.8em}
+.g3{display:grid;grid-template-columns:repeat(3,1fr);gap:.65em}
+.card{background:var(--card);border:1px solid var(--line);border-radius:8px;padding:.6em .75em}
+.note{font-size:.7em;color:#7a8c9d;margin-top:.25em}
+.call{border-right:3px solid var(--teal);background:var(--tint);border-radius:6px;padding:.4em .65em;font-size:.86em;color:var(--ink);margin-top:.45em}
+.call.w{border-color:var(--red)}
+.call.g{border-color:var(--gold)}
+.thesis{font-weight:700;font-size:.98em;color:var(--hd);border-right:3px solid var(--gold);background:var(--card);border-radius:6px;padding:.4em .65em;margin-bottom:.5em}
+.brow{display:grid;grid-template-columns:6.5em 1fr 2.7em;gap:.35em;align-items:center;margin:.25em 0;font-size:.8em}
+.trk{height:.6em;background:#e6edf2;border-radius:1em;overflow:hidden}
+.fill{display:block;height:100%;width:var(--w);background:linear-gradient(90deg,#1a8a82,#d2aa75);border-radius:1em}
+.fill.r{background:linear-gradient(90deg,#b6534d,#d2aa75)}
+.proj{border-right:3px solid var(--gold)}
+.proj .meta{font-size:.66em;color:#6a7d90;margin:.12em 0 .25em}
+.proj h3{font-size:.9em}
+.proj p{font-size:.78em;line-height:1.55}
+.zone{padding:.55em .5em}
+.zone b{display:block;color:var(--hd);font-size:.86em;margin-bottom:.2em}
+.zone p{font-size:.72em;line-height:1.5}
+.steps{display:flex;flex-direction:column;gap:.35em}
+.st{display:flex;gap:.45em;align-items:flex-start;background:var(--card);border:1px solid var(--line);border-radius:7px;padding:.45em .55em}
+.st i{flex-shrink:0;width:1.35em;height:1.35em;border-radius:50%;background:var(--navy);color:#fff;display:flex;align-items:center;justify-content:center;font-style:normal;font-size:.72em;font-weight:700}
+.gates{display:grid;grid-template-columns:repeat(4,1fr);gap:.4em;margin-top:.45em}
+.gt{background:var(--card);border:1px solid var(--line);border-radius:6px;padding:.45em .4em;text-align:center;font-size:.78em}
+.gt b{display:block;color:var(--gold);font-size:1.05em;margin-bottom:.15em}
+#bar{position:fixed;bottom:12px;left:50%;transform:translateX(-50%);display:flex;align-items:center;gap:5px;background:#0b2037f0;padding:5px 9px;border:1px solid #476078;border-radius:22px;z-index:20;color:#fff;font-size:11px}
+#bar button{border:0;background:#d2aa75;color:#102b49;border-radius:14px;padding:5px 11px;font:inherit;font-weight:800;cursor:pointer}
+#bar button.s{background:#294966;color:#fff}
+#ct{min-width:44px;text-align:center}
+#progress{position:fixed;top:0;right:0;height:3px;background:linear-gradient(90deg,#d2aa75,#1a8a82);z-index:30;width:0;transition:width .2s}
+@media print{body{background:#fff;display:block;overflow:visible}#stage{width:100%}.slide{position:relative;display:block!important;width:13.3in;height:7.5in;page-break-after:always;box-shadow:none;border-radius:0}#bar,#progress{display:none!important}}
+</style>
+</head>
+<body>
+<div id="progress"></div>
+<div id="stage">
 
-<section class="slide diagnosis-slide" data-title="حکم مرکزی">
- <div class="slide-head"><span>01 / حکم مرکزی</span><h1>تلویزیون انتخاب، مسئله یک گلوگاه ندارد؛ مسئله ناهماهنگی یک زنجیره است</h1></div>
- <p class="thesis">ظرفیت محصول و برند به انتخاب مشتری تبدیل نمی‌شود، چون وعده برند، ارزش واقعی محصول، دسترس‌پذیری مدل، اثبات مزیت در نقطه فروش و تجربه پس از خرید هنوز به یک پیشنهاد منسجم و قابل اتکا متصل نشده‌اند.</p>
- <div class="chain">
-  <div><b>01</b><strong>وعده برند</strong><small>چرا این برند؟</small></div><i>←</i>
-  <div><b>02</b><strong>ارزش محصول</strong><small>چه مزیتی در برابر قیمت؟</small></div><i>←</i>
-  <div><b>03</b><strong>عرضه و سبد</strong><small>مدل درست، در زمان درست؟</small></div><i>←</i>
-  <div><b>04</b><strong>اثبات در فروشگاه</strong><small>فروشنده و تجربه چه می‌گویند؟</small></div><i>←</i>
-  <div><b>05</b><strong>مالکیت و خدمت</strong><small>پس از خرید چه تجربه‌ای؟</small></div>
- </div>
- <div class="brand-diagnosis"><article><h3>اسنوا</h3><p>چالش اصلی: تبدیل آگاهی و رضایت موجود به پذیرش، اعتماد و انتخاب اول؛ به‌ویژه در بخش‌های رقابتی‌تر سبد.</p></article><article><h3>دوو</h3><p>چالش اصلی: تبدیل پذیرش بالاتر به ارزش ادراک‌شده و معامله رقابتی؛ حساسیت قیمت در بخشی از پاسخ‌ها برجسته است.</p></article></div>
- <p class="source-note">این حکم، جمع‌بندی مدیریتی شواهد گزارش است؛ نه نقل‌قول مستقیم از گزارش. تمایز برندها و موانع مشترک باید در تمام پروژه‌ها حفظ شود.</p>
-</section>
-
-
-<section class="slide" data-title="شواهد تشخیصی">
- <div class="slide-head"><span>02 / شواهد عارضه‌یابی</span><h1>مسئله در فاصله «شناخت» تا «انتخاب» و «دسترس‌پذیری» آشکار است</h1><p>اعداد زیر از گزارش عارضه‌یابی ۳۶۰ درجه؛ مهر ۱۴۰۵ استخراج شده‌اند. دامنه هر سنجه باید در تفسیر حفظ شود.</p></div>
- <div class="metric-grid">
-  <article class="metric"><small>آگاهی اسنوا</small><b>46.4٪</b><span>سنجش S1</span></article>
-  <article class="metric"><small>انتخاب اول اسنوا</small><b>8.7٪</b><span>سنجش S1</span></article>
-  <article class="metric"><small>آگاهی دوو</small><b>56٪</b><span>سنجش S1</span></article>
-  <article class="metric"><small>انتخاب اول دوو</small><b>17.9٪</b><span>سنجش S1</span></article>
- </div>
- <div class="two-col">
-  <div class="panel"><h3>شکاف تبدیل آگاهی به انتخاب اول</h3><div class="bars">
-   <div class="bar-row"><label>اسنوا · آگاهی</label><div><i style="width:46.4%"></i></div><b>46.4٪</b></div>
-   <div class="bar-row"><label>اسنوا · انتخاب اول</label><div><i style="width:8.7%"></i></div><b>8.7٪</b></div>
-   <div class="bar-row"><label>دوو · آگاهی</label><div><i style="width:56%"></i></div><b>56٪</b></div>
-   <div class="bar-row"><label>دوو · انتخاب اول</label><div><i style="width:17.9%"></i></div><b>17.9٪</b></div>
-  </div><p class="caveat">این نسبت‌ها قیف تبدیل دقیق یا نرخ خرید نیستند؛ دو سنجه مستقل در یک پیمایش‌اند.</p></div>
-  <div class="panel"><h3>شواهد اجرایی کانال و عرضه</h3>
-   <div class="big-stat"><b>75.3٪</b><span>گزارش کمبود موجودی در یکی از سنجه‌های کانال (S3)</span></div>
-   <div class="big-stat"><b>87.8٪ / 83.8٪</b><span>کهنگی یا فقدان آموزش فروشنده در دو برند (S4)</span></div>
-   <div class="big-stat"><b>26.8٪ / 32.4٪</b><span>صحت برچسب قیمت در دو برند (S4)</span></div>
+<!-- 0 Cover -->
+<section class="slide cover active">
+  <div style="width:100%;display:grid;grid-template-columns:1.3fr .7fr;gap:1.5em;align-items:center;padding:0 1em">
+    <div>
+      <div class="eb" style="margin-bottom:.6em">ارائه مدیریتی · آبان ۱۴۰۵</div>
+      <h1 style="font-size:2em;line-height:1.4;margin:0 0 .5em;color:#fff">مسئله تلویزیون در گروه انتخاب</h1>
+      <p style="font-size:1.05em;line-height:1.85;opacity:.95;max-width:28em">از عارضه‌یابی ۳۶۰ درجه تا پیشنهاد اجرایی محصول و بازاریابی برای اسنوا و دوو</p>
+      <p style="margin-top:1.2em;font-size:.95em;color:#e7c18e;font-weight:600">محصول قابل دفاع × عرضه پایدار × تجربه قابل اثبات × قیمت‌گذاری شفاف</p>
+    </div>
+    <div style="text-align:center">
+      <img src="https://it.entekhabgroup.com/wp-content/uploads/elementor/thumbs/logo5-px4c0voe2nj6bcq6dh665r5fhjn3b5s31xnryp596g.png" alt="گروه صنعتی انتخاب" style="max-width:180px;max-height:90px;object-fit:contain;filter:brightness(0) invert(1);opacity:.95;margin-bottom:.8em" onerror="this.style.display='none'">
+      <p style="font-size:.9em;line-height:1.7;opacity:.9">معاونت بازاریابی<br>تیم مدیریت محصولات سرگرمی<br>(صوتی و تصویری)</p>
+    </div>
   </div>
- </div>
- <p class="source-note">تفسیر مدیریتی: افزایش آگاهی به‌تنهایی درمان نیست؛ اگر موجودی، تمایز قابل‌فهم و اجرای فروشگاه هم‌زمان اصلاح نشوند، تقاضای ایجادشده به انتخاب و فروش پایدار تبدیل نمی‌شود. ارقام S3/S4 با تعریف و جامعه آماری همان سنجه گزارش شوند.</p>
 </section>
 
-<section class="slide" id="evidence"><div class="wrap"><div class="head"><span class="eyebrow2">۱ · تشخیص مبتنی بر شواهد</span><h2>مسئله، کمبود یک فعالیت بازاریابی نیست؛ شکست اتصال حلقه‌هاست</h2><p>داده‌های زیر از گزارش عارضه‌یابی و برنامه راهبردی استخراج شده‌اند. شاخص‌های انتخاب، رضایت، فروش، تولید و نمایش، مخرج‌های متفاوت دارند و نباید با یکدیگر جمع یا جایگزین شوند.</p></div>
-<div class="grid2">
-<div class="chartbox"><h3>قیف آگاهی تا انتخاب اول</h3><p>درصد پاسخ‌دهندگان در مطالعه S1؛ نه سهم فروش بازار</p><svg class="chart" viewBox="0 0 520 245"><line class="axis" x1="125" y1="24" x2="485" y2="24"/><line class="axis" x1="125" y1="75" x2="485" y2="75"/><line class="axis" x1="125" y1="126" x2="485" y2="126"/><line class="axis" x1="125" y1="177" x2="485" y2="177"/><text x="112" y="44" text-anchor="end">آگاهی اسنوا</text><rect class="bar1" x="125" y="29" width="167" height="22" rx="5"/><text class="value" x="300" y="46">۴۶٫۴٪</text><text x="112" y="95" text-anchor="end">انتخاب اول اسنوا</text><rect class="bar2" x="125" y="80" width="31" height="22" rx="5"/><text class="value" x="164" y="97">۸٫۷٪</text><text x="112" y="146" text-anchor="end">آگاهی دوو</text><rect class="bar3" x="125" y="131" width="202" height="22" rx="5"/><text class="value" x="335" y="148">۵۶٪</text><text x="112" y="197" text-anchor="end">انتخاب اول دوو</text><rect class="bar2" x="125" y="182" width="64" height="22" rx="5"/><text class="value" x="197" y="199">۱۷٫۹٪</text><text x="125" y="232">۰</text><text x="485" y="232" text-anchor="end">۱۰۰٪</text></svg><div class="source">منبع: عارضه‌یابی ۳۶۰، S1. آگاهی و انتخاب اول دو شاخص مجزا هستند.</div></div>
-<div class="chartbox"><h3>مشتری چه چیزی را در تلویزیون مهم می‌داند؟</h3><p>اولویت‌های اعلام‌شده در مطالعه بازار</p><svg class="chart" viewBox="0 0 520 245"><line class="axis" x1="130" y1="25" x2="490" y2="25"/><line class="axis" x1="130" y1="82" x2="490" y2="82"/><line class="axis" x1="130" y1="139" x2="490" y2="139"/><text x="118" y="48" text-anchor="end">کیفیت تصویر</text><rect class="bar1" x="130" y="30" width="254" height="24" rx="5"/><text class="value" x="393" y="48">۷۰٫۵٪</text><text x="118" y="105" text-anchor="end">فناوری بالاتر</text><rect class="bar3" x="130" y="87" width="211" height="24" rx="5"/><text class="value" x="350" y="105">۵۸٫۵٪</text><text x="118" y="162" text-anchor="end">هوشمندی / سیستم‌عامل</text><rect class="bar2" x="130" y="144" width="207" height="24" rx="5"/><text class="value" x="346" y="162">۵۷٫۵٪</text><text x="130" y="218">۰</text><text x="490" y="218" text-anchor="end">۱۰۰٪</text></svg><div class="source">منبع: عارضه‌یابی ۳۶۰، بخش محصول و فناوری. درصدها بر اساس پرسش‌های همان مطالعه‌اند.</div></div>
-<div class="chartbox"><h3>نمایش در بازار چندبرندی</h3><p>سهم نمایش هر برند؛ نه سهم فروش و نه سهم تولید</p><svg class="chart" viewBox="0 0 520 230"><text x="115" y="48" text-anchor="end">اسنوا</text><rect class="bar1" x="125" y="30" width="81" height="23" rx="5"/><text class="value" x="215" y="48">۴٫۰۴٪</text><text x="115" y="94" text-anchor="end">دوو</text><rect class="bar3" x="125" y="76" width="154" height="23" rx="5"/><text class="value" x="288" y="94">۷٫۶۸٪</text><text x="115" y="140" text-anchor="end">مادیران</text><rect class="bar2" x="125" y="122" width="346" height="23" rx="5"/><text class="value" x="477" y="140">۱۷٫۳٪</text><text x="125" y="194">۰</text><text x="490" y="194" text-anchor="end">۲۰٪</text></svg><div class="source">منبع: عارضه‌یابی ۳۶۰، تحلیل بازار چندبرندی. مجموع اسنوا و دوو ≈ ۱۱٫۷۲٪.</div></div>
-<div class="chartbox"><h3>مانع قیمت؛ تفاوت دو برند</h3><p>درصد از پاسخ‌دهندگان خارج از سبد بررسی در سؤال تأییدی قیمت</p><svg class="chart" viewBox="0 0 520 230"><text x="115" y="48" text-anchor="end">دوو</text><rect class="bar2" x="125" y="30" width="284" height="25" rx="5"/><text class="value" x="417" y="49">۴۷٫۴٪</text><text x="115" y="105" text-anchor="end">اسنوا</text><rect class="bar1" x="125" y="87" width="166" height="25" rx="5"/><text class="value" x="299" y="106">۲۷٫۷٪</text><text x="125" y="180">۰</text><text x="490" y="180" text-anchor="end">۶۰٪</text></svg><div class="source">منبع: عارضه‌یابی ۳۶۰، تحلیل قیمت. ۴۷٫۴٪ را نباید به کل مشتریان دوو تعمیم داد.</div></div>
-</div>
-<div class="callout warning"><strong>اصلاح مهم نسبت به نسخه قبلی:</strong> ۴۷٫۴٪ فقط به مشتریان خارج از سبد بررسی دوو و سؤال مشخص مانع قیمت مربوط است. در همان تحلیل، مقدار متناظر اسنوا ۲۷٫۷٪ گزارش شده است. همچنین ۱۲٫۲ روز پوشش موجودی و ۱۴٫۸ تا ۱۹٫۱ روز زمان شارژ، داده داخلی نیازمند تطبیق تعریف و دوره در G1 هستند.</div>
-<div class="grid3"><div class="card"><h3>اسنوا | مسئله پذیرش</h3><p>آگاهی ۴۶٫۴٪ به انتخاب اول ۸٫۷٪ تبدیل نشده است. مسئله صرفاً آگاهی نیست؛ اعتماد به پیشنهاد تلویزیون، تجربه محصول، حضور در بازار چندبرندی و دسترسی هم‌زمان اثر دارند.</p></div><div class="card"><h3>دوو | مسئله ارزش معامله</h3><p>انتخاب اول ۱۷٫۹٪ است؛ اما ارزش خرید نسبت به قیمت، توان پرداخت، پوشش سبد و استمرار موجودی مانع تبدیل کامل پذیرش به فروش است. کاهش عمومی قیمت، پاسخ پیش‌فرض نیست.</p></div><div class="card"><h3>گروه | مسئله تبدیل ظرفیت</h3><p>گزارش، فاصله میان توان تولید و توان تبدیل آن به فروش سودآور را برجسته می‌کند. سهم تولید، سهم فروش و انتخاب مشتری سه مفهوم متفاوت‌اند.</p></div></div>
-</div></section>
-<section class="slide" id="architecture"><div class="wrap"><div class="head"><span class="eyebrow2">۲ · چهار منظر D.Point</span><h2>چهار منظر، یک سیستم اجرایی</h2><p>مناظر چهارگانه نباید به چهار جزیره سازمانی تبدیل شوند. هر منظر بخشی از ارزش پیشنهادی تلویزیون را می‌سازد و پروژه‌های مشترک، اتصال آن‌ها را تضمین می‌کنند.</p></div>
-<div class="grid2"><div class="card brandcard"><div class="brandtop snow"><h3>منظر ۱ · فیچر محصول برند</h3><div class="tagline">معماری ارزش و قابلیت متمایز هر برند</div></div><svg class="visual" viewBox="0 0 600 180" role="img" aria-label="تصویر مفهومی دو خانواده محصول تلویزیون"><rect x="40" y="25" width="220" height="125" rx="10" fill="#153b59"/><rect x="49" y="34" width="202" height="105" rx="6" fill="#198b86"/><path d="M49 115 Q115 58 170 104 T251 75 V139 H49Z" fill="#102b49" opacity=".7"/><rect x="340" y="25" width="220" height="125" rx="10" fill="#153b59"/><rect x="349" y="34" width="202" height="105" rx="6" fill="#315b85"/><circle cx="450" cy="78" r="28" fill="#d9b37e"/><path d="M130 151v12m-45 0h90m320-12v12m-45 0h90" stroke="#667e93" stroke-width="5" stroke-linecap="round"/><text x="150" y="18" fill="#31536e" text-anchor="middle" font-size="12">Snowa</text><text x="450" y="18" fill="#31536e" text-anchor="middle" font-size="12">Daewoo</text></svg><div class="brandbody"><p><strong>اسنوا:</strong> هوشمندی بومی و تجربه متناسب با زندگی ایرانی؛ Done و Dana فقط در جایی که با معماری برند و ظرفیت فنی منطبق باشند.</p><p style="margin-top:8px"><strong>دوو:</strong> سرگرمی هوشمند، تجربه تصویری رقابتی، استانداردهای جهانی و ارزش خرید روشن؛ بدون انتقال خودکار قابلیت‌هایی که به هویت دوو تعلق ندارند.</p><span class="pill">DP-01</span><span class="pill">DP-02</span><span class="pill">DP-03</span><span class="pill">TV-03</span></div></div>
-<div class="card brandcard"><div class="brandtop dew"><h3>منظر ۲ · مزیت رقابتی محصول</h3><div class="tagline">تجربه قابل لمس، پایدار و قابل اثبات</div></div><svg class="visual" viewBox="0 0 600 180" role="img" aria-label="تصویر مفهومی رابط هوشمند تلویزیون"><rect x="40" y="18" width="520" height="145" rx="14" fill="#102b49"/><rect x="55" y="33" width="490" height="115" rx="8" fill="#eaf1f5"/><rect x="70" y="48" width="125" height="84" rx="7" fill="#1b8a83"/><rect x="210" y="48" width="145" height="38" rx="6" fill="#c49a62"/><rect x="210" y="95" width="145" height="37" rx="6" fill="#315b85"/><rect x="370" y="48" width="155" height="84" rx="7" fill="#d4e1e9"/><circle cx="430" cy="88" r="23" fill="#c49a62"/><path d="M80 117l30-37 30 24 24-33 21 61H80Z" fill="#e6f4f2"/><text x="282" y="73" text-anchor="middle" fill="#102b49" font-size="13">Done / Dana</text><text x="282" y="119" text-anchor="middle" fill="#fff" font-size="12">Google TV · مجوزمحور</text></svg><div class="brandbody"><p>لانچر و خدمات Done، مسیرهای مجاز Google TV، سرعت و پایداری نرم‌افزار، IoT و SmartBoom، و تعهد خدماتی روشن باید از ادعای بازاریابی به تجربه آزمون‌پذیر تبدیل شوند.</p><p style="margin-top:8px">Google TV، Google Play، Matter و سازگاری برندهای ثالث فقط برای مدل و نسخه‌ای ادعا شوند که مجوز و آزمون آن مستند است.</p><span class="pill">DP-04 تا DP-07</span><span class="pill">TV-04</span><span class="pill">TV-06</span><span class="pill">TV-09</span></div></div>
-<div class="card brandcard"><div class="brandtop" style="background:linear-gradient(110deg,#286c70,#368d83)"><h3>منظر ۳ · کمک به سایر محصولات گروه</h3><div class="tagline">تلویزیون به‌عنوان نقطه تماس اکوسیستم انتخاب</div></div><svg class="visual" viewBox="0 0 600 180" role="img" aria-label="تصویر مفهومی خانه هوشمند و لوازم خانگی متصل"><path d="M60 85L300 15 540 85" fill="none" stroke="#2f7f7b" stroke-width="8" stroke-linecap="round"/><rect x="85" y="83" width="430" height="78" rx="8" fill="#dce9e9"/><rect x="220" y="45" width="160" height="90" rx="8" fill="#153b59"/><rect x="230" y="55" width="140" height="70" rx="4" fill="#1a8e87"/><path d="M230 112 Q275 65 320 104 T370 82 V125 H230Z" fill="#102b49"/><rect x="105" y="98" width="65" height="52" rx="5" fill="#fff" stroke="#8da4b4"/><rect x="435" y="98" width="55" height="52" rx="5" fill="#fff" stroke="#8da4b4"/><circle cx="138" cy="112" r="6" fill="#c49a62"/><circle cx="462" cy="112" r="6" fill="#c49a62"/><path d="M170 125 Q195 90 220 100 M380 100 Q405 90 435 125" fill="none" stroke="#c49a62" stroke-width="3" stroke-dasharray="5 5"/><text x="300" y="153" fill="#31536e" text-anchor="middle" font-size="11">TV + یخچال + لباسشویی</text></svg><div class="brandbody"><p>تلویزیون می‌تواند ویترین زنده محصولات گروه و رابط تجربه خانه متصل باشد؛ اما اتصال به یخچال و لباسشویی باید مدل‌به‌مدل، با کنترل محلی، امنیت، رضایت کاربر و اقتصاد پشتیبانی آزموده شود.</p><p style="margin-top:8px">باشگاه خانواده و تعویض قدیمی با نو فرصت رشد است، نه علت اثبات‌شده افت فروش؛ وعده بازخرید یا ارتقای سه‌ساله بدون مصوبه مالی و حقوقی ممنوع.</p><span class="pill">DP-08</span><span class="pill">DP-09</span><span class="pill">TV-08</span><span class="pill">TV-11</span></div></div>
-<div class="card brandcard"><div class="brandtop" style="background:linear-gradient(110deg,#304c73,#597aa1)"><h3>منظر ۴ · فروشگاه تخصصی و نفر متخصص</h3><div class="tagline">تبدیل تفاوت فنی به دلیل خرید</div></div><svg class="visual" viewBox="0 0 600 180" role="img" aria-label="تصویر مفهومی فروشگاه تخصصی تلویزیون"><rect x="40" y="20" width="520" height="140" rx="9" fill="#e7edf2"/><path d="M40 60H560" stroke="#b8c8d4" stroke-width="5"/><rect x="75" y="40" width="120" height="78" rx="5" fill="#153b59"/><rect x="83" y="48" width="104" height="62" rx="3" fill="#198b86"/><rect x="240" y="40" width="120" height="78" rx="5" fill="#153b59"/><rect x="248" y="48" width="104" height="62" rx="3" fill="#315b85"/><rect x="405" y="40" width="120" height="78" rx="5" fill="#153b59"/><rect x="413" y="48" width="104" height="62" rx="3" fill="#c49a62"/><path d="M135 119v18m-22 0h44m165-18v18m-22 0h44m165-18v18m-22 0h44" stroke="#6d8193" stroke-width="4" stroke-linecap="round"/><circle cx="300" cy="146" r="8" fill="#c49a62"/><text x="300" y="174" text-anchor="middle" fill="#31536e" font-size="11">دمو استاندارد · فروشنده متخصص · تبدیل</text></svg><div class="brandbody"><p>شبکه نقاط تخصصی، کرنر و ایستگاه‌های تجربه باید به فروش و سود افزایشی متصل شوند. فروشنده متخصص باید دموی استاندارد اجرا کند، تفاوت تصویر و پلتفرم را توضیح دهد و شرایط خدمت را دقیق بیان کند.</p><p style="margin-top:8px">هدف پیشنهادی ۲۰ نقطه در ۱۰ شهر، مرحله‌ای و مشروط به موجودی پایدار، اقتصاد نقطه و مقایسه با نقاط شاهد است.</p><span class="pill">DP-10</span><span class="pill">TV-02</span><span class="pill">TV-10</span></div></div></div>
-<div class="callout good"><strong>منطق یکپارچه:</strong> منظر ۱ «چه چیزی می‌فروشیم و چرا هر برند؟» را پاسخ می‌دهد؛ منظر ۲ «چرا محصول ما بهتر/قابل‌اعتمادتر است؟»؛ منظر ۳ «چگونه از تلویزیون برای رشد سبد گروه استفاده می‌کنیم؟»؛ منظر ۴ «چطور این ارزش را در لحظه خرید اثبات می‌کنیم؟».</div>
-</div></section>
-<section class="slide" id="portfolio"><div class="wrap"><div class="head"><span class="eyebrow2">۳ · سبد پروژه یکپارچه</span><h2>۱۰ کلان‌پروژه نهایی؛ هم‌پوشانی D.Point و TV بدون دوباره‌کاری</h2><p>ساختار زیر، ۱۰ پروژه D.Point را با ۱۲ کلان‌پروژه TV هم‌پوشانی می‌دهد. کدهای TV برای ردیابی برنامه اصلی حفظ شده‌اند؛ اما در اجرا، هر فعالیت فقط یک خانه اصلی، یک خروجی و یک شاخص پاسخ‌گو دارد.</p></div>
-<div class="grid2">
-<article class="card project"><h3>01 · معماری برند و فیچر اختصاصی اسنوا و دوو</h3><div class="meta"><span>DP-01 + DP-02</span><span>TV-03</span><span>منظر ۱</span><span>پیش‌شرط محصول</span></div><div class="why"><strong>مسئله:</strong> شناخته‌شدن برند به انتخاب تبدیل نمی‌شود؛ دو برند نیز نباید یک تجربه یا وعده هم‌شکل داشته باشند.</div><p><strong>دامنه اجرا:</strong> تعریف نقش برند، ارزش پیشنهادی، فیچرهای الزامی و ممنوع، نردبان مدل و قیمت، پیام‌های قابل اثبات و سناریوهای دمو. اسنوا محل نمایش هوشمندی بومی در صورت تناسب برند است؛ دوو بر سرگرمی، تصویر و استاندارد جهانی تکیه می‌کند.</p><div class="deliver"><strong>خروجی‌های پذیرش:</strong><ul><li>Brand-to-Feature Matrix برای هر دو برند</li><li>نقشه سگمنت و مدل‌های ۵۵/۶۵ اینچ و فناوری‌های بالاتر</li><li>کارت مقایسه رقابتی و پیام فروش مدل‌محور</li><li>دروازه ورود مدل: تقاضا، تجربه، سود، تأمین و نقش برند</li></ul><strong>شاخص‌ها:</strong> پوشش SKU با معماری مصوب؛ نرخ عبور از آزمون رقابتی؛ انتخاب اول در سگمنت هدف؛ حاشیه مشارکت هر مدل.</div><p class="source">اتصال: TV-03، TV-05، TV-07. مالکان اصلی طبق برنامه TV: مدیر محصول تلویزیون و مدیر بازاریابی/برند؛ تصمیمات بین‌واحدی در G1.</p></article>
-<article class="card project"><h3>02 · کف رقابتی تصویر، پردازش، پنل و سبد</h3><div class="meta"><span>DP-03</span><span>TV-03</span><span>منظر ۱</span><span>محصول و فناوری</span></div><div class="why"><strong>مسئله:</strong> مشخصات روی کاغذ کافی نیست؛ تصویر، پردازش، سرعت و تجربه هوشمند باید در مقایسه کنترل‌شده رقابتی باشند.</div><p><strong>دامنه اجرا:</strong> استاندارد حداقلی تصویر و حرکت، زمان پاسخ و پردازش، پایداری سیستم‌عامل، سایزهای پرتقاضا، شکاف ۶۵ اینچ و فناوری‌های بالاتر. شکاف‌های VRR/۱۲۰Hz و سری گیمینگ دوو باید در سطح نیاز بازار و مشخصات واقعی SKU تصمیم‌گیری شوند.</p><div class="deliver"><strong>خروجی‌ها:</strong><ul><li>پروتکل آزمون تصویر با برند پنهان و ورودی یکسان</li><li>Scorecard رقبا و کف قبولی هر سگمنت</li><li>فهرست شکاف SKU و تصمیم ساخت/توقف/ارتقا</li><li>گزارش آزمون مدل‌های منتخب و اقدام اصلاحی</li></ul><strong>شاخص‌ها:</strong> امتیاز آزمون تصویر؛ نرخ عبور از Gate؛ تعداد شکاف بحرانی باز؛ سود مدل پس از هزینه‌های مرتبط.</div><p class="source">اتصال: TV-03، TV-05، TV-12. مرجع روش ارزیابی ذهنی تصویر: ITU-R BT.500-15؛ مشخصات فنی هر مدل باید از دیتاشیت مصوب بیاید.</p></article>
-<article class="card project"><h3>03 · Done، Dana و تجربه نرم‌افزاری پایدار</h3><div class="meta"><span>DP-04 + DP-05</span><span>TV-06</span><span>منظر ۲</span><span>پلتفرم</span></div><div class="why"><strong>مسئله:</strong> سرویس دیجیتال زمانی مزیت است که سریع، قابل اتکا، قابل استفاده در شرایط واقعی ایران و مجاز باشد.</div><p><strong>دامنه اجرا:</strong> معماری نسخه AOSP و Google TV به‌صورت مجزا؛ Done Launcher و Done TV در مدل‌های مجاز؛ حضور خدمات محتوا در لایه‌های مجاز Google TV؛ تفکیک وضعیت Dana از بتا تا انتشار؛ جست‌وجو و کشف محتوا؛ کارکرد پایه آفلاین؛ امنیت و به‌روزرسانی.</p><div class="deliver"><strong>خروجی‌ها:</strong><ul><li>نقشه پلتفرم و ماتریس مدل/مجوز/قابلیت</li><li>Roadmap لانچر، سرویس Done و Dana</li><li>مبنای زمانی بوت، منو، جست‌وجو و خطا</li><li>آزمون سناریوهای قطع اینترنت و بازیابی</li></ul><strong>شاخص‌ها:</strong> زمان بوت/منو؛ نرخ Crash؛ موفقیت سناریوهای جست‌وجو؛ MAU و ماندگاری؛ رضایت تجربه هوشمند.</div><p class="source">اتصال: TV-06، TV-09، TV-10. مجوز Google TV/Play و امکان استفاده از SDK باید برای مدل و بازار مشخص، کتبی تأیید شود.</p></article>
-<article class="card project"><h3>04 · SmartBoom و خانه متصل انتخاب</h3><div class="meta"><span>DP-06 + DP-09</span><span>TV-08</span><span>منظر ۲ و ۳</span><span>پایلوت</span></div><div class="why"><strong>مسئله:</strong> ادعای اکوسیستم بدون اتصال واقعی، پایدار و پشتیبانی‌پذیر، ریسک تجربه و اعتبار می‌سازد.</div><p><strong>دامنه اجرا:</strong> انتخاب دقیق مدل‌های یخچال و لباسشویی؛ تعریف یک تا دو سناریوی کاربردی؛ جفت‌سازی، کنترل محلی، اعلان‌های غیرمزاحم، حریم خصوصی، امنیت، پشتیبانی و هزینه اتصال.</p><div class="deliver"><strong>خروجی‌ها:</strong><ul><li>ماتریس سازگاری مدل/پروتکل/فرمان</li><li>نمونه عملیاتی در آزمایشگاه و پایلوت محدود</li><li>راهنمای نصب، عیب‌یابی و مسئولیت خدمات</li><li>اندازه‌گیری استفاده واقعی و هزینه پشتیبانی</li></ul><strong>شاخص‌ها:</strong> موفقیت اتصال؛ خانوار فعال رضایت‌مند؛ خطای فرمان؛ هزینه خدمت به ازای کاربر فعال؛ نرخ استفاده ماهانه.</div><p class="source">اتصال: TV-08، TV-06، TV-12. Matter، Xiaomi و Philips فقط در صورت گواهی/آزمون نسخه دقیق قابل ادعا هستند.</p></article>
-<article class="card project"><h3>05 · کیفیت میدانی، خدمات متمایز و بازسازی اعتماد</h3><div class="meta"><span>DP-07</span><span>TV-04 + TV-09</span><span>منظر ۲</span><span>پیش‌شرط اعتماد</span></div><div class="why"><strong>مسئله:</strong> تجربه پس از خرید باید با وعده پیش از خرید یکسان باشد؛ خرابی، برچسب علت و علت ریشه‌ای نباید یکی فرض شوند.</div><p><strong>دامنه اجرا:</strong> ثبت خرابی دستگاه یکتا با مدت مشاهده برابر؛ تفکیک علت ریشه‌ای از کد/برچسب؛ کیفیت نصب، قطعه، زمان حل و برگشت؛ بازطراحی سیاست ۱۵/۳۰/۶۰ روزه در یک سند واحد؛ روشن‌کردن شرایط تعویض ۳۰روزه و ظرفیت اجرای آن.</p><div class="deliver"><strong>خروجی‌ها:</strong><ul><li>تعریف واحد نرخ خرابی و نرخ اقدام اصلاحی</li><li>تحلیل مدل‌های پرریسک و CAPA</li><li>سیاست خدمات و مرجوعی با تأیید حقوقی/مالی</li><li>کارت تعهد خدمات قابل فهم برای فروشنده و مشتری</li></ul><strong>شاخص‌ها:</strong> خرابی هم‌دوره به ازای نصب؛ نصب موفق؛ زمان حل؛ تکرار مراجعه؛ نرخ اجرای SLA؛ رضایت پس از خدمت.</div><p class="source">اتصال: TV-04، TV-06، TV-09، TV-05. در S8، ۸۰٫۵۱٪ برچسب «مشکل نصب نرم‌افزار» علت قطعی اثبات‌شده نیست؛ ۴۵٪ رخدادها در ماه نصب گزارش شده‌اند.</p></article>
-<article class="card project"><h3>06 · تلویزیون به‌عنوان ویترین زنده سبد انتخاب</h3><div class="meta"><span>DP-08</span><span>TV-08 + TV-09 + TV-10</span><span>منظر ۳</span><span>فروش متقاطع</span></div><div class="why"><strong>مسئله:</strong> ظرفیت تلویزیون برای هدایت مشتری به محصولات دیگر گروه استفاده نشده یا فاقد سنجش اثر است.</div><p><strong>دامنه اجرا:</strong> کتابخانه محتوای اختیاری و کنترل‌شده درباره یخچال، لباسشویی و سایر محصولات؛ صفحه محصول تعاملی؛ مسیر درخواست اطلاعات یا سرنخ؛ نمایش در فروشگاه و امکان خاموش‌کردن/عدم مزاحمت برای کاربر.</p><div class="deliver"><strong>خروجی‌ها:</strong><ul><li>الگوی نمایش و محتوای تأییدشده برندهای گروه</li><li>صفحه اطلاعات محصول و CTA قابل ردیابی</li><li>اتصال سرنخ به CRM/فروش و روش انتساب</li><li>پایلوت در نقاط منتخب و گروه شاهد</li></ul><strong>شاخص‌ها:</strong> بازدید محتوای محصول؛ سرنخ واجد شرایط؛ تبدیل منتسب؛ سود افزایشی؛ نرخ اختلال در تجربه تماشا.</div><p class="source">اتصال: TV-08، TV-09، TV-10، TV-11. تبلیغ درون تلویزیون باید رضایت‌محور، محدود و قابل کنترل باشد.</p></article>
-<article class="card project"><h3>07 · باشگاه خانواده، تعویض و چرخه عمر مشتری</h3><div class="meta"><span>بخش هم‌افزا با DP-08</span><span>TV-11</span><span>منظر ۳</span><span>فرصت نوآوری</span></div><div class="why"><strong>مسئله:</strong> فرصت ارتباط بلندمدت با خانواده و تسهیل توان خرید وجود دارد؛ اما اقتصاد بازخرید و تعهدهای آتی باید روشن شود.</div><p><strong>دامنه اجرا:</strong> تعویض قدیمی با نو در محدوده پایلوت؛ عضویت اختیاری؛ مراقبت و محتوای خدماتی؛ معرفی خانواده و خرید متقاطع؛ مطالعه مستقل ارزش باقیمانده و ریسک مالی. وعده بازخرید یا ارتقای سه‌ساله تا مصوبه مستقل ممنوع.</p><div class="deliver"><strong>خروجی‌ها:</strong><ul><li>فرایند ارزیابی و جمع‌آوری دستگاه قدیمی</li><li>رضایت‌نامه، ضوابط عضویت و خدمات</li><li>مدل اقتصاد واحد و ریسک بازخرید</li><li>پایلوت محدود با روش انتساب خرید</li></ul><strong>شاخص‌ها:</strong> فروش افزایشی؛ سود پس از جمع‌آوری/حمل؛ عضو فعال نه صرفاً ثبت‌نام‌شده؛ خرید متقاطع معتبر؛ رضایت و ماندگاری.</div><p class="source">اتصال: TV-11، TV-05، TV-07، TV-12. فرصت توسعه است، نه علت اثبات‌شده افت فروش.</p></article>
-<article class="card project"><h3>08 · فروشگاه تخصصی، ایستگاه تجربه و آکادمی فروشنده</h3><div class="meta"><span>DP-10</span><span>TV-02 + TV-10</span><span>منظر ۴</span><span>پایلوت تجاری</span></div><div class="why"><strong>مسئله:</strong> عمق نمایش، آموزش فروشنده، دقت برچسب قیمت و دموی استاندارد در بازار چندبرندی ناکافی است.</div><p><strong>دامنه اجرا:</strong> ۲۰ نقطه پیشنهادی در ۱۰ شهر به‌صورت موجی؛ پنج ایستگاه Picture Lab، Smart TV Lab، Gaming Zone، Home Cinema و Smart Home Lab؛ استاندارد ویترین؛ آموزش و گواهی فروشنده؛ بسته فروش B2B و دیجیتال.</p><div class="deliver"><strong>خروجی‌ها:</strong><ul><li>استاندارد فروشگاه/کرنر و اقتصاد نقطه</li><li>لیست پایلوت و نقاط شاهد همسان</li><li>محتوای آموزش، آزمون و گواهی فروشنده</li><li>چک‌لیست ممیزی قیمت، موجودی و کیفیت دمو</li></ul><strong>شاخص‌ها:</strong> فروش و سود افزایشی نسبت به شاهد؛ نرخ تبدیل؛ سهم نمایش؛ عمق نمایش؛ گواهی فروشنده؛ صحت قیمت؛ شکایت اطلاعات غلط.</div><p class="source">اتصال: TV-02، TV-10، TV-07. سهم نمایش گروه ≈۱۱٫۷۲٪ در برابر مادیران ۱۷٫۳٪؛ عمق نمایش حدود ۲٫۶ در برابر ۴ گزارش شده است.</p></article>
-<article class="card project"><h3>09 · عرضه پایدار و هماهنگی زنجیره ارزش</h3><div class="meta"><span>ادغام زیرساختی</span><span>TV-01 + TV-12</span><span>همه مناظر</span><span>فوری و موازی</span></div><div class="why"><strong>مسئله:</strong> تقاضا، سفارش، قطعه، تولید، موجودی، فروش، نصب و خدمات در یک چرخه هماهنگ دیده نمی‌شوند.</div><p><strong>دامنه اجرا:</strong> برنامه یکپارچه فروش و عملیات؛ پیش‌بینی SKU محور؛ سناریوهای عرضه و نقد؛ رفع کمبود مدل سالم و سودآور؛ کنترل موجودی راکد؛ تحویل بین واحدها؛ ریسک قطعه، ارز و برق؛ اتصال سفارش تا نصب و خدمات.</p><div class="deliver"><strong>خروجی‌ها:</strong><ul><li>برنامه ماهانه تقاضا/عرضه/نقد با سه سناریو</li><li>فهرست SKUهای حیاتی و روزهای پوشش</li><li>داشبورد سفارش تا نصب و خدمات</li><li>نقشه گلوگاه، مسئول و SLA تحویل داخلی</li></ul><strong>شاخص‌ها:</strong> دسترس‌پذیری SKU؛ روزهای پوشش؛ تحویل کامل و به‌موقع؛ پیش‌بینی‌پذیری؛ موجودی راکد؛ چرخه نقد و هزینه کل مسیر.</div><p class="source">اتصال: TV-01، TV-12، TV-02، TV-04، TV-07. رفع کمبود فوری نباید منتظر تکمیل سامانه یا داشبورد بماند.</p></article>
-<article class="card project"><h3>10 · داده، اقتصاد مدل و رشد سودآور سهم</h3><div class="meta"><span>زیرساخت کنترل</span><span>TV-05 + TV-07</span><span>همه مناظر</span><span>مدیریت عملکرد</span></div><div class="why"><strong>مسئله:</strong> فروش به کانال، فروش نهایی، نصب، فعال‌سازی، موجودی، سود و سهم بازار گاهی با تعاریف متفاوت گزارش می‌شوند.</div><p><strong>دامنه اجرا:</strong> واژه‌نامه KPI؛ اتصال فاکتور و سریال به نصب، برگشت و خدمات؛ اقتصاد SKU و معامله؛ ممیزی صورت/مخرج سهم بازار؛ داشبورد هیئت‌مدیره؛ برآورد هزینه/منفعت/نقدینگی هر پروژه قبل از تعهد هزینه.</p><div class="deliver"><strong>خروجی‌ها:</strong><ul><li>واژه‌نامه و فرهنگ داده معتبر</li><li>سود و نقد مدل/کانال/کمپین</li><li>داشبورد فروش نهایی، موجودی، کیفیت و تجربه</li><li>Business Case و تصمیم ادامه/اصلاح/توقف</li></ul><strong>شاخص‌ها:</strong> پوشش داده؛ مغایرت سریال/فاکتور؛ سود خالص مدل؛ دقت پیش‌بینی؛ سهم فروش معتبر؛ ROI و نقدینگی پروژه.</div><p class="source">اتصال: TV-05، TV-07 و TV-12. هدف ۲۵–۳۰٪ سهم فروش گروه در سه ماه پایانی سال اول، هدف مشروط برنامه است؛ نه تعهد قطعی یا سهم هر برند.</p></article>
-</div></div></section>
-<section class="slide" id="matrix"><div class="wrap"><div class="head"><span class="eyebrow2">۴ · ماتریس ردیابی و حذف هم‌پوشانی</span><h2>هر پروژه TV کجا نشسته و هر D.Point چه خروجی دارد؟</h2><p>این ماتریس از دوباره‌کاری جلوگیری می‌کند. کدهای اصلی TV حفظ می‌شوند، اما مالکیت خروجی در یکی از ۱۰ پروژه یکپارچه تثبیت می‌شود.</p></div><div class="tablewrap"><table class="matrix"><thead><tr><th>پروژه یکپارچه</th><th>DP-01</th><th>DP-02</th><th>DP-03</th><th>DP-04</th><th>DP-05</th><th>DP-06</th><th>DP-07</th><th>DP-08</th><th>DP-09</th><th>DP-10</th><th>TV</th></tr></thead><tbody>
-<tr><td>01 معماری برند و فیچر اختصاصی</td><td><i class="dot"></i></td><td><i class="dot"></i></td><td><i class="dot mid"></i></td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>03</td></tr>
-<tr><td>02 کف رقابتی تصویر و سبد</td><td>—</td><td>—</td><td><i class="dot"></i></td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>03,05,12</td></tr>
-<tr><td>03 Done، Dana و تجربه نرم‌افزاری</td><td>—</td><td>—</td><td>—</td><td><i class="dot"></i></td><td><i class="dot"></i></td><td>—</td><td><i class="dot mid"></i></td><td>—</td><td>—</td><td>—</td><td>06,09,10</td></tr>
-<tr><td>04 SmartBoom و خانه متصل</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td><i class="dot"></i></td><td>—</td><td>—</td><td><i class="dot"></i></td><td>—</td><td>08,06,12</td></tr>
-<tr><td>05 کیفیت میدانی و خدمات</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td><i class="dot"></i></td><td>—</td><td>—</td><td>—</td><td>04,09,06</td></tr>
-<tr><td>06 ویترین زنده سبد انتخاب</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td><i class="dot"></i></td><td><i class="dot mid"></i></td><td>—</td><td>08,09,10</td></tr>
-<tr><td>07 باشگاه خانواده و چرخه عمر</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td><i class="dot mid"></i></td><td>—</td><td>—</td><td>11,05,07</td></tr>
-<tr><td>08 فروشگاه تخصصی و آکادمی فروشنده</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td><i class="dot"></i></td><td>02,10,07</td></tr>
-<tr><td>09 عرضه پایدار و زنجیره ارزش</td><td>—</td><td>—</td><td><i class="dot mid"></i></td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>01,12</td></tr>
-<tr><td>10 داده، اقتصاد مدل و رشد سهم</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>05,07,12</td></tr>
-</tbody></table></div><p class="note">راهنما: نقطه سبز = اتصال اصلی؛ نقطه طلایی = هم‌افزایی یا وابستگی. «—» یعنی مالکیت مستقیم خروجی در آن پروژه تعریف نشده است.</p>
-<div class="callout"><strong>قاعده ضدهم‌پوشانی:</strong> TV-05 و TV-12 پروژه‌های زیرساختی مشترک‌اند و نباید به‌عنوان کار مستقل در هر پروژه تکرار شوند. TV-07 نیز «نتیجه رشد» است، نه پروژه ظرفیت تولید. TV-09 به دو مسیر تفکیک شده: کیفیت/خدمت در پروژه ۰۵ و شاهد محصول/تجربه خرید در پروژه‌های ۰۱، ۰۲ و ۰۸.</div></div></section>
-<section class="slide" id="roadmap"><div class="wrap"><div class="head"><span class="eyebrow2">۵ · نقشه راه ۱۲ ماهه</span><h2>ترتیب اجرا بر اساس وابستگی؛ نه صرفاً تقویم</h2><p>رفع کمبود مدل سالم و سودآور، کنترل داده، کیفیت، محصول و نرم‌افزار از ابتدا موازی آغاز می‌شوند. توسعه شبکه و تبلیغ گسترده پس از اثبات آمادگی و نتیجه مجاز است.</p></div>
-<div class="timeline"><div class="phase"><b>سه‌ماهه ۱ · مبنا و آماده‌سازی</b><h3>تثبیت واقعیت کسب‌وکار</h3><p>واژه‌نامه KPI و اقتصاد SKU؛ رفع فوری کمبودهای اولویت‌دار؛ نقشه برند و سبد؛ خط مبنای کیفیت و نرم‌افزار؛ سیاست خدمت؛ طراحی پایلوت فروشگاه و خانه متصل.</p></div><div class="phase"><b>سه‌ماهه ۲ · آزمون و اثبات</b><h3>نمونه عملیاتی و پایلوت</h3><p>آزمون تصویر و تجربه؛ MVP نرم‌افزار؛ پایلوت محدود فروشگاه/فروشنده؛ آزمون ویترین محصولات گروه؛ تست اتصال مدل‌های منتخب؛ سنجش اقتصاد و تجربه مشتری.</p></div><div class="phase"><b>سه‌ماهه ۳ · اصلاح و توسعه کنترل‌شده</b><h3>توسعه فقط برای برنده‌ها</h3><p>اصلاح مدل و تجربه؛ توسعه موج دوم نقاط موفق؛ توسعه پیام و کمپین مبتنی بر شاهد؛ گسترش خدمات و محتوا در مدل‌های مجاز؛ بهبود سفارش و موجودی.</p></div><div class="phase"><b>سه‌ماهه ۴ · مقیاس و بازبینی</b><h3>رشد سودآور و تصمیم سال بعد</h3><p>توسعه طرح‌های دارای فروش و سود افزایشی؛ ارزیابی هدف سهم فروش گروه؛ بازبینی اقتصاد مدل/کانال؛ تصمیم ادامه، اصلاح یا توقف پروژه‌های نوآوری.</p></div></div>
-<div class="head" style="margin-top:32px"><h2>تحویل‌های غیرقابل مذاکره در ۹۰ روز نخست</h2></div><div class="grid3"><div class="card"><h3>داده و اقتصاد</h3><ul><li>واژه‌نامه و تطبیق فروش نهایی/موجودی</li><li>اقتصاد مدل‌های اصلی</li><li>داشبورد از هفته هفتم</li></ul></div><div class="card"><h3>محصول و تجربه</h3><ul><li>نقش دو برند و دروازه مدل</li><li>خط مبنای بوت، منو و خطا</li><li>آزمون تصویر با پروتکل یکسان</li></ul></div><div class="card"><h3>عرضه و کانال</h3><ul><li>رفع کمبود SKUهای سالم و سودآور</li><li>نقشه تقاضا تا نصب و خدمات</li><li>پایلوت فروشگاه و آموزش فروشنده</li></ul></div></div></div></section>
-<section class="slide" id="governance"><div class="wrap"><div class="head"><span class="eyebrow2">۶ · کنترل، اقتصاد و تصمیم هیئت‌مدیره</span><h2>چه چیزی باید تصویب شود و چه چیزی هنوز نباید وعده داده شود؟</h2><p class="muted">پروژه زمانی موفق است که فروش و سود افزایشی بسازد، نه اینکه صرفاً خروجی فعالیت یا تعداد نقاط افتتاح‌شده را افزایش دهد.</p></div>
-<div class="grid2"><div class="card"><h3>داشبورد ماهانه هیئت‌مدیره</h3><ul><li><strong>فروش:</strong> فروش نهایی اسنوا، دوو و گروه؛ برگشت؛ سهم معتبر با منبع و پوشش</li><li><strong>سود:</strong> سود مدل و معامله پس از مشوق، اعتبار، خدمات و مرجوعی</li><li><strong>نقد:</strong> چرخه نقد، مطالبات، پرداختنی و نیاز سرمایه در گردش</li><li><strong>موجودی:</strong> دسترس‌پذیری SKU هدف، روز پوشش و موجودی راکد</li><li><strong>کیفیت:</strong> خرابی دستگاه یکتا با دوره مشاهده برابر، علت ریشه‌ای و تکرار خدمت</li><li><strong>تجربه:</strong> انتخاب اول، رضایت پس از خدمت، زمان بوت، موفقیت سناریو</li><li><strong>اثر پایلوت:</strong> فروش و سود افزایشی در برابر نقطه شاهد</li></ul></div><div class="card"><h3>قواعدی که باید جلوی تصمیم غلط را بگیرند</h3><ul><li>تولید بیشتر بدون تقاضا، سود، نقد و موجودی سالم = ریسک انباشت</li><li>کاهش کور قیمت = تخریب حاشیه بدون تضمین افزایش انتخاب</li><li>تبلیغ گسترده قبل از موجودی و خدمت = تبدیل تقاضا به نارضایتی</li><li>ادعای Google TV / Matter / سازگاری ثالث بدون مجوز و آزمون = ریسک اعتبار و حقوقی</li><li>توسعه ۲۰ نقطه بدون گروه شاهد و اقتصاد نقطه = هزینه ثابت پیش از اثبات</li><li>اعلام SLA یا بازخرید بدون ظرفیت عملیاتی و تأیید حقوقی/مالی = تعهد پرریسک</li></ul></div></div>
-<div class="head" style="margin-top:28px"><h2>دروازه‌های تصمیم (Stage Gates)</h2></div><div class="gate"><div><b>G0</b><h3>شروع و منابع</h3><p>حامی، مالک نتیجه، ظرفیت اجرا، بودجه و فرض‌های اصلی مشخص شوند.</p></div><div><b>G1</b><h3>خط مبنا و آمادگی</h3><p>تعریف KPI، SKU، اقتصاد، مجوز، نمونه و گروه شاهد تأیید شود.</p></div><div><b>G2</b><h3>نتیجه پایلوت</h3><p>اثر اولیه بر فروش، سود، تجربه، کیفیت و عملیات سنجیده شود.</p></div><div><b>G3</b><h3>تصمیم مقیاس</h3><p>فقط با فروش و سود افزایشی، موجودی سالم و توان خدمت توسعه یابد.</p></div></div>
-<div class="callout" style="margin-top:20px"><strong>تصمیم‌های پیشنهادی هیئت‌مدیره:</strong><br>۱) تصویب معماری ۱۰ پروژه یکپارچه و حفظ کدهای TV برای ردیابی؛ ۲) الزام اقتصاد و نقدینگی پیش از هر تعهد هزینه؛ ۳) اجازه پایلوت مرحله‌ای ۲۰ نقطه تخصصی و پنج ایستگاه تجربه، مشروط به G1/G2؛ ۴) تعیین تکلیف مجوزها و نقشه پلتفرم Done/Google TV؛ ۵) تصویب کارگروه مدل‌های ۶۵ اینچ و کف رقابتی تصویر؛ ۶) تثبیت سیاست واحد خدمات ۱۵/۳۰/۶۰ و شرایط تعویض ۳۰روزه پس از تأیید حقوقی/مالی؛ ۷) تعریف سهم فروش گروه و هدف ۲۵–۳۰٪ به‌عنوان هدف مشروط، پس از ممیزی مخرج بازار.</div>
-<div class="callout warning"><strong>مواردی که فعلاً نباید به‌عنوان واقعیت قطعی در ارائه عمومی بیان شوند:</strong> سازگاری فراگیر SmartBoom با برندهای ثالث؛ دسترسی قطعی Google TV/Play در همه مدل‌ها؛ تعویض ۳۰روزه بدون قید و شرط بدون درج ضوابط رسمی؛ بازخرید یا ارتقای سه‌ساله؛ هدف ۲۵–۳۰٪ بدون تعریف سهم فروش و مخرج بازار؛ نرخ خرابی به‌عنوان علت ریشه‌ای بدون بررسی فنی.</div>
-</div></section>
-
-<section class="slide photo-slide" data-title="تجربه و پلتفرم">
- <div class="slide-head"><span>تجربه محصول و نرم‌افزار</span><h1>تلویزیون باید از نمایشگر محتوا به نقطه ورود تجربه دیجیتال گروه تبدیل شود</h1><p>SmartBoom و قابلیت‌های IoT، دارایی‌های موجود اکوسیستم‌اند؛ پروژه بر بسته‌بندی تجربه، سناریوهای کاربردی و اتصال آن به ارزش خرید متمرکز است.</p></div>
- <div class="photo-grid">
-  <figure><img src="https://substackcdn.com/image/fetch/%24s_%21DTlV%21%2Cw_1456%2Cc_limit%2Cf_auto%2Cq_auto%3Agood%2Cfl_progressive%3Asteep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Feb74bedc-c92e-4630-af5b-48593741539e_3981x2659.jpeg" alt="Google TV interface"><figcaption>نمونه رابط Google TV؛ تصویر مرجع، نه تصویر محصول انتخاب · <a href="https://substackcdn.com/image/fetch/%24s_%21DTlV%21%2Cw_1456%2Cc_limit%2Cf_auto%2Cq_auto%3Agood%2Cfl_progressive%3Asteep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Feb74bedc-c92e-4630-af5b-48593741539e_3981x2659.jpeg" target="_blank">منبع تصویر</a></figcaption></figure>
-  <figure><img src="https://mcprod.jumbo.ae/media/catalog/product/8/5/85p7k_tcl-home.jpg" alt="Smart home TV dashboard"><figcaption>نمونه داشبورد خانه هوشمند روی تلویزیون · <a href="https://mcprod.jumbo.ae/media/catalog/product/8/5/85p7k_tcl-home.jpg" target="_blank">منبع تصویر</a></figcaption></figure>
-  <figure><img src="https://www.vizio.com/content/dam/vizio/us/en/images/global/content-partners/tv-3.jpg" alt="Content discovery interface"><figcaption>نمونه کشف محتوا و تجربه نرم‌افزاری · <a href="https://www.vizio.com/content/dam/vizio/us/en/images/global/content-partners/tv-3.jpg" target="_blank">منبع تصویر</a></figcaption></figure>
- </div>
- <div class="note-band"><b>مرزبندی مهم:</b> قابلیت‌های SmartBoom و IoT به‌عنوان دارایی‌های موجود معرفی می‌شوند. تنها موضوع مشروط، مسیر انتشار/نمایش محتوای Done روی سطوح Google TV است؛ Engage SDK امکان حضور محتوای اپ در سطوح کشف محتوا را فراهم می‌کند، نه جایگزینی لانچر Google TV.</div>
- <p class="source-note">مرجع فنی Google: <a href="https://developer.android.com/guide/playcore/engage/faq" target="_blank">Engage SDK FAQ</a> · <a href="https://developer.android.com/google/play/engage" target="_blank">Android Developers</a>. دسترسی عملیاتی در هر مدل/بازار نیازمند احراز شرایط پلتفرم است.</p>
+<!-- 1 -->
+<section class="slide">
+  <span class="eb">۰۱ · عارضه اصلی از نگاه محصول و بازاریابی</span>
+  <h1>شناخت هست، انتخاب نیست؛ پذیرش هست، ارزش خرید کامل نیست</h1>
+  <p class="thesis">اسنوا با شکاف عمیق تبدیل آگاهی به انتخاب اول روبه‌روست. دوو پذیرش بهتری دارد اما ارزش خرید در برابر قیمت برای بخش قابل توجهی از مخاطبان مانع شده است.</p>
+  <div class="g2">
+    <div class="card">
+      <h3>اسنوا · قیف آگاهی تا انتخاب</h3>
+      <div class="brow"><label>آگاهی</label><div class="trk"><i class="fill" style="--w:46.4%"></i></div><b>۴۶٫۴٪</b></div>
+      <div class="brow"><label>انتخاب اول</label><div class="trk"><i class="fill r" style="--w:8.7%"></i></div><b>۸٫۷٪</b></div>
+      <p class="note"><b>S1</b> = پیمایش آگاهی و انتخاب برند (نمونه بازار، نه سهم فروش ملی). این دو عدد از یک مطالعه می‌آیند و نشان می‌دهند شناخت به‌تنهایی خرید نمی‌سازد.</p>
+      <p style="margin-top:.35em;font-size:.8em">از نگاه محصول: کیفیت ادراک‌شده، نظر دیگران و تجربه منفی قبلی در مسیر انتخاب اسنوا وزن دارند. پاسخ باید در نقطه فروش و با شاهد محصول باشد.</p>
+    </div>
+    <div class="card">
+      <h3>دوو · پذیرش بهتر، مانع قیمت</h3>
+      <div class="brow"><label>آگاهی</label><div class="trk"><i class="fill" style="--w:56%"></i></div><b>۵۶٪</b></div>
+      <div class="brow"><label>انتخاب اول</label><div class="trk"><i class="fill" style="--w:17.9%"></i></div><b>۱۷٫۹٪</b></div>
+      <div class="brow"><label>مانع قیمت</label><div class="trk"><i class="fill r" style="--w:47.4%"></i></div><b>۴۷٫۴٪</b></div>
+      <p class="note"><b>S6</b> = تحلیل مانع قیمت در پاسخ‌دهندگان خارج از فهرست بررسی. این عدد به کل مشتریان دوو تعمیم داده نمی‌شود.</p>
+      <p style="margin-top:.35em;font-size:.8em">دوو برند کره‌ای با سابقه جهانی است. در ایران باید این هویت بین‌المللی در کنار <b>قیمت‌گذاری شفاف</b> و تجربه تصویری رقابتی دیده شود. کاهش کور قیمت پاسخ پیش‌فرض نیست.</p>
+    </div>
+  </div>
 </section>
+
+<!-- 2 چهار منظر -->
+<section class="slide">
+  <span class="eb">۰۲ · چهار منظر حاج آقا دیانی</span>
+  <h1>معماری ارزش از چهار زاویه</h1>
+  <div class="g2">
+    <div class="card">
+      <h3>منظر ۱ · فیچر محصول برند</h3>
+      <p><b>اسنوا:</b> هوشمندی بومی، متناسب با زندگی ایرانی. Done و Dana اینجا ارزش بیشتری دارند و باید دیده شوند.</p>
+      <p><b>دوو:</b> برند کره‌ای با تجربه جهانی در سرگرمی و تصویر. هویت بین‌المللی + قیمت‌گذاری شفاف. پیشنهاد محصول و بازاریابی: Done برای ارزش برند دوو ضروری نیست.</p>
+      <p class="note">سبد باید شفاف باشد: جهیزیه، اقتصادی، کامل. همه مدل‌های کلیدی در نمایش و پیام فروش حضور داشته باشند.</p>
+    </div>
+    <div class="card">
+      <h3>منظر ۲ · مزیت رقابتی محصول</h3>
+      <p><b>Dana</b> (بتا): نماوا و فیلیمو، اوقات شرعی، نتایج ورزشی لیگ برتر، اتصال به فروشگاه‌هایی مثل افق کوروش.</p>
+      <p><b>Done روی Google TV:</b> مسیر واقع‌بینانه مشابه لایه محتوایی سونی و PatchWall شیائومی؛ نه جایگزینی کامل لانچر.</p>
+      <p><b>SLA:</b> ۳۰ روز تعویض بدون قید (انتخاب سرویس) مزیت واقعی است و باید در نقطه فروش با صدای بلند گفته شود.</p>
+      <p class="note">پیشنهاد: ادغام تدریجی SmartBoom و Done Home برای پروتکل‌های بیشتر.</p>
+    </div>
+    <div class="card">
+      <h3>منظر ۳ · کمک به سبد گروه</h3>
+      <p>تلویزیون می‌تواند نقطه ورود به یخچال، لباسشویی و سایر محصولات گروه باشد. SmartBoom و Done Home ابزار این اتصال‌اند.</p>
+      <p><b>باشگاه مشتریان فعال‌تر:</b> تعویض محصول قدیمی با جدید + قیمت‌گذاری شفاف در بازخرید. هدف افزایش تکرار خرید و فروش متقاطع است.</p>
+    </div>
+    <div class="card">
+      <h3>منظر ۴ · فروشگاه تخصصی و نفر متخصص</h3>
+      <p>موج اول: ۱۲ فروشگاه تخصصی در ۶ شهر بزرگ. در هر شهر فروشگاه‌های شاهد (بدون مداخله ویژه) برای مقایسه فروش و سود افزایشی در نظر گرفته می‌شود.</p>
+      <p>پنج زون تجربه + فروشنده آموزش‌دیده + موجودی پایدار مدل‌های کلیدی.</p>
+    </div>
+  </div>
+</section>
+
+<!-- 3 بنچمارک -->
+<section class="slide">
+  <span class="eb">۰۳ · بنچمارک و درس رقابتی</span>
+  <h1>چه چیزی از بازار جهانی برای ایران قابل الگوبرداری است؟</h1>
+  <div class="g3">
+    <div class="card">
+      <h3>Xiaomi · PatchWall</h3>
+      <p>لایه کشف محتوای محلی روی Android TV / Google TV. محتوا را از سرویس‌های مختلف در یک تجربه واحد جمع می‌کند.</p>
+      <div class="call" style="margin-top:.4em;font-size:.78em"><b>درس برای Done:</b> از «اپلیکیشن» به «لایه کشف محتوای ایرانی» ارتقا پیدا کند.</div>
+    </div>
+    <div class="card">
+      <h3>Sony · لایه محتوایی</h3>
+      <p>سونی لانچر Google TV را عوض نمی‌کند؛ اپ‌ها و ردیف‌های محتوایی خود را داخل تجربه Google TV قرار می‌دهد.</p>
+      <div class="call" style="margin-top:.4em;font-size:.78em"><b>درس:</b> مسیر واقع‌بینانه برای Done روی Google TV همین مدل است.</div>
+    </div>
+    <div class="card">
+      <h3>دوو به‌عنوان برند کره‌ای</h3>
+      <p>دوو ریشه کره‌ای و تجربه جهانی در لوازم خانگی و تصویر دارد. در ایران باید این هویت بین‌المللی در پیام فروش، طراحی و استاندارد فنی دیده شود؛ نه فقط قیمت.</p>
+      <div class="call" style="margin-top:.4em;font-size:.78em"><b>درس:</b> ارزش خرید = تصویر رقابتی + استاندارد جهانی + قیمت‌گذاری شفاف.</div>
+    </div>
+  </div>
+  <div class="call w" style="margin-top:.6em"><b>نکته ایران:</b> Done باید در قطعی اینترنت و فیلترینگ کار کند. Google و Play Store در این شرایط از دسترس خارج می‌شوند؛ این نقطه تمایز واقعی اسنوا است.</div>
+</section>
+
+<!-- 4 شواهد کانال -->
+<section class="slide">
+  <span class="eb">۰۴ · شواهد کانال و اجرا</span>
+  <h1>موجودی، آموزش فروشنده و سهم نمایش</h1>
+  <div class="g2">
+    <div class="card">
+      <h3>کمبود و آمادگی فروشنده</h3>
+      <div class="brow"><label>کمبود موجودی</label><div class="trk"><i class="fill r" style="--w:75.3%"></i></div><b>۷۵٫۳٪</b></div>
+      <div class="brow"><label>آموزش قدیمی اسنوا</label><div class="trk"><i class="fill r" style="--w:87.8%"></i></div><b>۸۷٫۸٪</b></div>
+      <div class="brow"><label>آموزش قدیمی دوو</label><div class="trk"><i class="fill r" style="--w:83.8%"></i></div><b>۸۳٫۸٪</b></div>
+      <p class="note"><b>S3</b> = سنجش موجودی و کمبود در کانال · <b>S4</b> = سنجش آموزش فروشنده و صحت برچسب قیمت</p>
+      <p style="margin-top:.3em;font-size:.8em">بدون موجودی پایدار و فروشنده آماده، هر سرمایه‌گذاری روی آگاهی و تبلیغ، تقاضا را به نارضایتی تبدیل می‌کند.</p>
+    </div>
+    <div class="card">
+      <h3>سهم و عمق نمایش</h3>
+      <div class="brow"><label>نمایش گروه</label><div class="trk"><i class="fill r" style="--w:11.7%"></i></div><b>۱۱٫۷٪</b></div>
+      <div class="brow"><label>نمایش مادیران</label><div class="trk"><i class="fill" style="--w:17.3%"></i></div><b>۱۷٫۳٪</b></div>
+      <p class="note"><b>S7</b> = تحلیل سهم نمایش در بازار چندبرندی. عمق نمایش گروه نیز کمتر گزارش شده (حدود ۲٫۶ در برابر حدود ۴ دستگاه).</p>
+      <div class="call w" style="margin-top:.4em"><b>نتیجه محصولی:</b> حضور فیزیکی بدون عمق نمایش و دموی استاندارد، ظرفیت محصول را هدر می‌دهد.</div>
+    </div>
+  </div>
+</section>
+
+<!-- 5 پروژه ۱ تا ۵ -->
+<section class="slide">
+  <span class="eb">۰۵ · ده پروژه یکپارچه · بخش اول</span>
+  <h1>پاسخ اجرایی از منظر محصول و بازاریابی (۱ تا ۵)</h1>
+  <div class="g2">
+    <div class="card proj">
+      <h3>۱. معماری برند و فیچر اختصاصی</h3>
+      <div class="meta">منظر ۱ (فیچر محصول برند) · TV-03 = معماری برند و سبد محصول</div>
+      <p>نقش اسنوا و دوو، فیچرهای الزامی و ممنوع، نردبان مدل و قیمت، پیام فروش مدل‌محور. Done و Dana ارزش اصلی‌شان در اسنواست. دوو به‌عنوان برند کره‌ای با استاندارد جهانی روی تصویر و قیمت‌گذاری شفاف می‌ماند. خروجی: ماتریس برند-فیچر و کارت مقایسه رقابتی.</p>
+    </div>
+    <div class="card proj">
+      <h3>۲. کف رقابتی تصویر و سبد</h3>
+      <div class="meta">منظر ۱ (فیچر محصول برند) · مرتبط با TV-03 = معماری برند و سبد محصول</div>
+      <p>آزمون تصویر با ورودی و محتوای یکسان. تصمیم درباره شکاف‌ها: نبود پنل نیتیو ۱۲۰ هرتز در دوو با وجود پشتیبانی VRR، ضعف تعریف سری گیمینگ، پوشش سایزهای پرتقاضا به‌ویژه ۶۵ اینچ.</p>
+    </div>
+    <div class="card proj">
+      <h3>۳. Done و Dana پایدار</h3>
+      <div class="meta">منظر ۲ (مزیت رقابتی) · TV-06 = دان سریع و پایدار، آفلاین و سازگار با پلتفرم‌های مجاز</div>
+      <p>میزبان‌ها: سری هرمز، سری ۴۰۰، اندروید باکس. Dana با قابلیت‌های بتا (نماوا، فیلیمو، اوقات شرعی، نتایج ورزشی). مسیر Google TV مشابه سونی و PatchWall. اندازه‌گیری بوت، منو، خطا و کارکرد آفلاین.</p>
+    </div>
+    <div class="card proj">
+      <h3>۴. خانه متصل و SmartBoom</h3>
+      <div class="meta">منظر ۲ و ۳ (مزیت رقابتی + کمک به سبد گروه) · TV-08 = خانه متصل انتخاب</div>
+      <p>اتصال واقعی به مدل‌های دقیق یخچال و لباسشویی. پیشنهاد ادغام SmartBoom و Done Home برای پروتکل‌های بیشتر. کنترل محلی در قطع اینترنت. پایلوت محدود قبل از هر ادعای گسترده.</p>
+    </div>
+    <div class="card proj">
+      <h3>۵. کیفیت میدانی و برجسته‌سازی SLA</h3>
+      <div class="meta">منظر ۲ (مزیت رقابتی) · TV-04 = تضمین تجربه و کیفیت میدانی · TV-09 = بازسازی اعتماد</div>
+      <p>۳۰ روز تعویض بدون قید (انتخاب سرویس) باید در نقطه فروش، آموزش فروشنده و مواد فروش با صدای بلند گفته شود. ثبت یکسان علت خرابی و کاهش مراجعه تکراری.</p>
+      <p style="margin-top:.3em;font-size:.78em"><b>سیاست ۱۵/۳۰/۶۰:</b> پیشنهاد اجرایی برای چارچوب خدمت — ۱۵ شب امکان آزمون در خانه، ۳۰ روز تعویض بدون قید، ۶۰ روز پوشش عیب اولیه. این سیاست پس از تأیید حقوقی و مالی نهایی و ظرفیت اجرا اعلام عمومی می‌شود؛ تا آن زمان فقط مزیت فعلی ۳۰ روزه برجسته می‌گردد.</p>
+    </div>
+  </div>
+</section>
+
+<!-- 6 پروژه ۶ تا ۱۰ -->
+<section class="slide">
+  <span class="eb">۰۶ · ده پروژه یکپارچه · بخش دوم</span>
+  <h1>پاسخ اجرایی از منظر محصول و بازاریابی (۶ تا ۱۰)</h1>
+  <div class="g2">
+    <div class="card proj">
+      <h3>۶. ویترین زنده سبد گروه</h3>
+      <div class="meta">منظر ۳ (کمک به سبد گروه) · مرتبط با TV-08 و TV-10</div>
+      <p>تلویزیون نقطه نمایش یخچال، لباسشویی و سایر محصولات گروه. محتوای کنترل‌شده و قابل خاموش‌کردن توسط کاربر. اتصال سرنخ به فروش و سنجش فروش متقاطع. هدف: تلویزیون فقط فروش خودش را نسازد.</p>
+    </div>
+    <div class="card proj">
+      <h3>۷. باشگاه مشتریان فعال‌تر</h3>
+      <div class="meta">منظر ۳ (کمک به سبد گروه) · TV-11 = باشگاه خانواده انتخاب؛ تعویض، مراقبت و پیوند</div>
+      <p>طرح تعویض محصول قدیمی با جدید. قیمت‌گذاری شفاف در فرآیند بازخرید. عضویت اختیاری و مراقبت. هدف افزایش تکرار خرید و فروش متقاطع. ارتقای سه‌ساله فقط موضوع امکان‌سنجی است و تا مصوبه مستقل وعده داده نمی‌شود.</p>
+    </div>
+    <div class="card proj">
+      <h3>۸. فروشگاه تخصصی و پنج زون تجربه</h3>
+      <div class="meta">منظر ۴ (فروشگاه تخصصی) · TV-02 = تیم تخصصی فروش و شبکه · TV-10 = اول ببین بعد بخر</div>
+      <p>موج اول: ۱۲ فروشگاه تخصصی در ۶ شهر (تهران، کرج، اصفهان، شیراز، مشهد، تبریز). برای هر فروشگاه تخصصی، یک فروشگاه عادی هم‌سطح به‌عنوان «شاهد» انتخاب می‌شود تا فروش و سود افزایشی واقعی سنجیده شود. گسترش فقط پس از دیدن نتیجه مثبت نسبت به شاهد.</p>
+    </div>
+    <div class="card proj">
+      <h3>۹. عرضه پایدار و هماهنگی زنجیره</h3>
+      <div class="meta">همه مناظر · TV-01 = پایداری عرضه · TV-12 = هماهنگی زنجیره ارزش از تقاضا تا خدمات</div>
+      <p>رفع فوری کمبود مدل‌های سالم و سودآور. هماهنگی تقاضا، سفارش، تولید، موجودی، نصب و خدمات. تعریف روز پوشش و SKUهای حیاتی. این کار پیش‌شرط همه آزمون‌های فروشگاهی است.</p>
+    </div>
+    <div class="card proj">
+      <h3>۱۰. داده معتبر و اقتصاد مدل</h3>
+      <div class="meta">همه مناظر · TV-05 = داده معتبر و اقتصاد هر مدل · TV-07 = رشد سودآور سهم فروش گروه</div>
+      <p>واژه‌نامه یکسان فروش نهایی، موجودی و سود مدل. اقتصاد هر SKU قبل از تعهد هزینه. هدف ۲۵–۳۰٪ سهم فروش گروه مشروط به عبور از دروازه‌هاست؛ نه تعهد قطعی و نه معادل ظرفیت تولید.</p>
+    </div>
+  </div>
+</section>
+
+<!-- 7 فروشگاه و شهرها -->
+<section class="slide">
+  <span class="eb">۰۷ · فروشگاه تخصصی · موج اول</span>
+  <h1>۱۲ فروشگاه تخصصی در ۶ شهر + ۱۲ فروشگاه شاهد</h1>
+  <div class="g2" style="margin-bottom:.55em">
+    <div class="card">
+      <h3>ساختار موج اول</h3>
+      <p><b>۶ شهر:</b> تهران · کرج · اصفهان · شیراز · مشهد · تبریز</p>
+      <p style="margin-top:.3em"><b>۱۲ فروشگاه تخصصی:</b> در این فروشگاه‌ها پنج زون تجربه، آموزش فروشنده، موجودی پایدار مدل‌های کلیدی و دموی استاندارد اجرا می‌شود.</p>
+      <p style="margin-top:.3em"><b>۱۲ فروشگاه شاهد:</b> فروشگاه‌های عادی هم‌سطح در همان شهرها که هیچ مداخله ویژه‌ای (زون، آموزش اضافه، موجودی ویژه) دریافت نمی‌کنند. فقط برای مقایسه فروش و سود افزایشی استفاده می‌شوند.</p>
+    </div>
+    <div class="card">
+      <h3>چرا شاهد لازم است؟</h3>
+      <p>اگر فقط فروشگاه تخصصی را باز کنیم و فروش آن را ببینیم، نمی‌دانیم رشد به‌خاطر زون و آموزش بوده یا به‌خاطر فصل، تبلیغ کلی یا شانس.</p>
+      <p style="margin-top:.3em">با داشتن فروشگاه شاهد هم‌سطح، می‌توان گفت: «فروش و سود این ۱۲ نقطه نسبت به ۱۲ نقطه مشابه چقدر بیشتر شده است؟»</p>
+      <div class="call" style="margin-top:.4em"><b>قاعده:</b> گسترش به شهرها و نقاط بیشتر فقط وقتی مجاز است که فروش و سود افزایشی نسبت به شاهد در G2 و G3 اثبات شود.</div>
+    </div>
+  </div>
+  <div class="call g"><b>جمع:</b> ۱۲ فروشگاه تخصصی (با زون و آموزش) + ۱۲ فروشگاه شاهد (بدون مداخله) = ۲۴ نقطه در موج اول برای اندازه‌گیری اثر واقعی.</div>
+</section>
+
+<!-- 8 پنج زون تجربه -->
+<section class="slide">
+  <span class="eb">۰۸ · پنج زون تجربه</span>
+  <h1>هر زون یک سؤال مشتری را جواب می‌دهد</h1>
+  <div class="g3">
+    <div class="card zone">
+      <b>زون تجربه ۱ · تصویر</b>
+      <p><b>چه چیزی نشان داده می‌شود:</b> چند مدل کنار هم با ورودی HDMI یکسان و فیلم/محتوای یکسان.</p>
+      <p><b>آورده:</b> مشتری تفاوت روشنایی، کنتراست، رنگ و حرکت را با چشم می‌بیند؛ نه از روی کاتالوگ.</p>
+    </div>
+    <div class="card zone">
+      <b>زون تجربه ۲ · هوشمند</b>
+      <p><b>چه چیزی نشان داده می‌شود:</b> Done Launcher، Dana (جست‌وجوی نماوا/فیلیمو، اوقات شرعی، نتایج ورزشی)، کارکرد بدون اینترنت.</p>
+      <p><b>آورده:</b> «هوشمندی بومی» از شعار به تجربه تبدیل می‌شود و تفاوت اسنوا با بقیه ملموس می‌گردد.</p>
+    </div>
+    <div class="card zone">
+      <b>زون تجربه ۳ · بازی</b>
+      <p><b>چه چیزی نشان داده می‌شود:</b> VRR، تأخیر ورودی و روانی حرکت فقط روی مدل‌های واجد شرایط.</p>
+      <p><b>آورده:</b> مشتری بازی‌دوست دلیل فنی خرید مدل بالاتر را می‌فهمد و ارزش خرید روشن‌تر می‌شود.</p>
+    </div>
+    <div class="card zone">
+      <b>زون تجربه ۴ · سینما</b>
+      <p><b>چه چیزی نشان داده می‌شود:</b> صحنه سینمایی یکسان روی مدل‌های مختلف + ترکیب با ساندبار در صورت وجود.</p>
+      <p><b>آورده:</b> تفاوت صدا و تصویر در حالت تماشای فیلم برای مشتری قابل قضاوت می‌شود.</p>
+    </div>
+    <div class="card zone">
+      <b>زون تجربه ۵ · خانه متصل</b>
+      <p><b>چه چیزی نشان داده می‌شود:</b> کنترل ساده یخچال یا لباسشویی سازگار از طریق SmartBoom روی صفحه تلویزیون.</p>
+      <p><b>آورده:</b> تلویزیون از «نمایشگر» به «نقطه ورود اکوسیستم انتخاب» تبدیل می‌شود و فروش متقاطع معنا پیدا می‌کند.</p>
+    </div>
+    <div class="card" style="border-right:3px solid var(--gold)">
+      <h3 style="margin-bottom:.3em">نکته مهم درباره محتوای دمو</h3>
+      <p>محتوای پخش‌شده در همه زون‌ها باید کنترل‌شده و یکسان باشد. روی تلویزیون Full HD فقط دموی HD و روی مدل 4K فقط دموی 4K پخش شود تا مشتری کیفیت واقعی همان دستگاه را ببیند؛ نه کیفیت پایین‌تر یا بالاتر از واقعیت. فیلم و کلیپ مقایسه باید از قبل تأیید شده و در همه فروشگاه‌ها یکی باشد.</p>
+    </div>
+  </div>
+</section>
+
+<!-- 9 ترتیب اجرا -->
+<section class="slide">
+  <span class="eb">۰۹ · ترتیب اجرا و دروازه‌ها</span>
+  <h1>اول داده و عرضه، بعد آزمون؛ رشد پیامد است نه پروژه مستقل</h1>
+  <div class="g2">
+    <div class="steps">
+      <div class="st"><i>۱</i><div><b>داده و اقتصاد مدل</b><br><span style="font-size:.78em;color:#6a7d90">TV-05 = داده معتبر، فروش نهایی و اقتصاد هر مدل</span><p>تعریف یکسان فروش نهایی، موجودی و سود مدل قبل از هر تصمیم رشد</p></div></div>
+      <div class="st"><i>۲</i><div><b>هماهنگی زنجیره ارزش</b><br><span style="font-size:.78em;color:#6a7d90">TV-12 = هماهنگی زنجیره از تقاضا تا خدمات</span><p>اتصال سفارش، تولید، موجودی، نصب و خدمات به هم</p></div></div>
+      <div class="st"><i>۳</i><div><b>رفع کمبود مدل‌های سالم</b><br><span style="font-size:.78em;color:#6a7d90">TV-01 = پایداری عرضه و چرخه نقد</span><p>اولویت فوری؛ معطل کامل شدن سامانه نشود</p></div></div>
+      <div class="st"><i>۴</i><div><b>پیش‌شرط محصول و نرم‌افزار</b><br><span style="font-size:.78em;color:#6a7d90">TV-03 معماری برند · TV-04 کیفیت و SLA · TV-06 Done و Dana</span><p>سبد، کیفیت میدانی و پایداری نرم‌افزار آماده شود</p></div></div>
+      <div class="st"><i>۵</i><div><b>آزمون ۱۲ فروشگاه تخصصی + ۱۲ شاهد</b><br><span style="font-size:.78em;color:#6a7d90">TV-02 شبکه فروش · TV-10 اول ببین بعد بخر</span><p>اندازه‌گیری فروش و سود افزایشی نسبت به شاهد</p></div></div>
+      <div class="st"><i>۶</i><div><b>رشد مشروط سهم</b><br><span style="font-size:.78em;color:#6a7d90">TV-07 = رشد سودآور سهم فروش گروه</span><p>فقط پس از عبور از دروازه G2 و G3</p></div></div>
+    </div>
+    <div>
+      <h3 style="margin-bottom:.4em">معنی دروازه‌ها (G0 تا G3)</h3>
+      <div class="gates" style="grid-template-columns:1fr 1fr">
+        <div class="gt"><b>G0</b>اجازه شروع کار و تخصیص منابع اولیه</div>
+        <div class="gt"><b>G1</b>آماده‌سازی داده، مدل، مجوزها و قاعده تصمیم</div>
+        <div class="gt"><b>G2</b>نتیجه آزمون ۱۲ فروشگاه تخصصی در برابر ۱۲ شاهد</div>
+        <div class="gt"><b>G3</b>اجازه گسترش فقط اگر فروش و سود افزایشی اثبات شده باشد</div>
+      </div>
+      <div class="call" style="margin-top:.5em"><b>آزمون ۱۲+۱۲ چیست؟</b> ۱۲ فروشگاه تخصصی (با زون تجربه و آموزش) در برابر ۱۲ فروشگاه عادی هم‌سطح (شاهد) که هیچ مداخله‌ای نمی‌گیرند. فقط با این مقایسه می‌توان گفت اثر واقعی از کجا آمده است.</div>
+      <div class="call w" style="margin-top:.35em"><b>قاعده طلایی:</b> تبلیغ گسترده و افزایش تعداد فروشگاه قبل از موجودی پایدار و نتیجه پایلوت، تقاضا را به نارضایتی تبدیل می‌کند.</div>
+    </div>
+  </div>
+</section>
+
+<!-- 10 تصمیم‌ها -->
+<section class="slide">
+  <span class="eb">۱۰ · موارد نیازمند تصویب</span>
+  <h1>پیشنهادهای تیم مدیریت محصولات سرگرمی و معاونت بازاریابی</h1>
+  <div class="g2">
+    <div class="card">
+      <h3>برای تصمیم‌گیری</h3>
+      <p>• تأیید نقش اسنوا به‌عنوان جایگاه اصلی نمایش Done و Dana</p>
+      <p>• تأیید پیشنهاد: Done برای ارزش برند دوو ضروری نیست؛ دوو با هویت کره‌ای و استاندارد جهانی روی تصویر و قیمت‌گذاری شفاف می‌ماند</p>
+      <p>• تأیید مسیر محتوایی Done روی Google TV (مشابه سونی و PatchWall)</p>
+      <p>• تأیید پیشنهاد ادغام تدریجی SmartBoom و Done Home</p>
+      <p>• تأیید موج اول: ۱۲ فروشگاه تخصصی در ۶ شهر + ۱۲ فروشگاه شاهد</p>
+      <p>• برجسته‌سازی جدی SLA ۳۰ روزه در نقطه فروش و آموزش فروشنده</p>
+      <p>• فعال‌سازی باشگاه مشتریان با تعویض قدیمی و قیمت‌گذاری شفاف بازخرید</p>
+      <p>• نمایش شفاف سبدها (جهیزیه، اقتصادی و ترکیب‌های پرفروش)</p>
+      <p>• اولویت بررسی شکاف پنل نیتیو ۱۲۰ هرتز و تعریف روشن‌تر سری گیمینگ دوو</p>
+    </div>
+    <div class="card">
+      <h3>جمع‌بندی</h3>
+      <p style="font-size:.92em;color:var(--ink);line-height:1.7">اسنوا جایگاه هوشمندی بومی و Done/Dana است. دوو جایگاه برند کره‌ای با تجربه جهانی، سرگرمی هوشمند و قیمت‌گذاری شفاف است.</p>
+      <p style="margin-top:.4em;font-size:.86em">سه قفل باید هم‌زمان باز شوند: عرضه پایدار مدل‌های سالم، اعتماد و اثبات در نقطه فروش، ارزش خرید روشن برای مشتری و کانال.</p>
+      <div class="call" style="margin-top:.5em"><b>درخواست مشخص:</b> تصویب G0 برای شروع آزمون ۱۲ فروشگاه تخصصی + ۱۲ شاهد و رفع فوری کمبود مدل‌های سالم و سودآور.</div>
+    </div>
+  </div>
+</section>
+
 </div>
-<div id="toolbar"><button id="prev" class="secondary">→ قبلی</button><span id="counter">1 / 10</span><button id="next">بعدی ←</button><button id="full" class="secondary">تمام‌صفحه</button><button id="print" class="secondary">PDF</button></div>
-<div class="intro" id="intro"><img src="https://it.entekhabgroup.com/wp-content/uploads/elementor/thumbs/logo5-px4c0voe2nj6bcq6dh665r5fhjn3b5s31xnryp596g.png" alt="لوگوی گروه صنعتی انتخاب"><h1>استراتژی بازاریابی ۳۶۰ تلویزیون اسنوا و دوو</h1><p>گروه صنعتی انتخاب · ارائه مدیریتی</p></div>
+
+<nav id="bar">
+  <button id="pv" class="s">→ قبلی</button>
+  <span id="ct"></span>
+  <button id="nx">بعدی ←</button>
+  <button id="fs" class="s">تمام‌صفحه</button>
+</nav>
+
 <script>
-const slides=[...document.querySelectorAll('.slide')];let current=0;
-function show(n){current=Math.max(0,Math.min(slides.length-1,n));slides.forEach((s,i)=>{s.classList.toggle('active',i===current);if(i===current)s.scrollTop=0});document.getElementById('counter').textContent=(current+1)+' / '+slides.length;document.getElementById('progress').style.width=((current+1)/slides.length*100)+'%';}
-document.getElementById('prev').onclick=()=>show(current-1);document.getElementById('next').onclick=()=>show(current+1);
-document.getElementById('full').onclick=()=>{if(!document.fullscreenElement)document.documentElement.requestFullscreen?.();else document.exitFullscreen?.()};
-document.getElementById('print').onclick=()=>window.print();
-document.addEventListener('keydown',e=>{if(['ArrowLeft','ArrowRight','PageDown','PageUp',' '].includes(e.key)){e.preventDefault();show(current+(['ArrowLeft','PageDown',' '].includes(e.key)?1:-1))}if(e.key==='Home')show(0);if(e.key==='End')show(slides.length-1);if(e.key==='Escape')document.getElementById('intro').style.display='none'});
-document.getElementById('intro').addEventListener('click',()=>document.getElementById('intro').style.display='none');
-show(0);
-</script></body></html>
+const S=[...document.querySelectorAll('.slide')];let c=0;
+const fa=n=>String(n).replace(/\d/g,d=>'۰۱۲۳۴۵۶۷۸۹'[d]);
+function go(n){c=Math.max(0,Math.min(S.length-1,n));S.forEach((s,i)=>{s.classList.toggle('active',i===c);if(i===c)s.scrollTop=0});document.getElementById('ct').textContent=fa(c+1)+' / '+fa(S.length);document.getElementById('progress').style.width=((c+1)/S.length*100)+'%'}
+document.getElementById('pv').onclick=()=>go(c-1);
+document.getElementById('nx').onclick=()=>go(c+1);
+document.getElementById('fs').onclick=()=>{try{document.fullscreenElement?document.exitFullscreen():document.documentElement.requestFullscreen()}catch(e){}};
+document.addEventListener('keydown',e=>{if(['ArrowLeft','PageDown',' '].includes(e.key)){e.preventDefault();go(c+1)}if(['ArrowRight','PageUp'].includes(e.key)){e.preventDefault();go(c-1)}if(e.key==='Home')go(0);if(e.key==='End')go(S.length-1)});
+go(0);
+</script>
+</body>
+</html>
